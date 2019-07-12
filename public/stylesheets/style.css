@@ -1,0 +1,160 @@
+body {
+  margin: 2px 5px 0px 5px; }
+
+a {
+  color: #ffffff; }
+
+nav {
+  background-color: #00B7FF;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10px;
+  padding: 13px 0; }
+
+.fa-cog {
+  color: black; }
+
+a {
+  text-decoration: none; }
+
+nav a {
+  font-size: 1.7em; }
+
+nav img {
+  width: 60px;
+  border-radius: 12px;
+  margin-right: 10px; }
+
+nav input {
+  border-radius: 20px;
+  padding: 6px; }
+
+nav a[type="submit"] {
+  margin-top: 10px;
+  margin-left: -60px;
+  height: 20px;
+  width: 50px; }
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B7FF;
+  background: #00B7FF;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px; }
+
+.btn:focus {
+  outline: none; }
+
+.search {
+  width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end; }
+
+.searchTerm {
+  width: 80%;
+  border: 3px solid #00B7FF;
+  border-right: none;
+  padding: 12px;
+  height: 20px;
+  border-radius: 26px;
+  outline: none;
+  color: #9DBFAF; }
+
+.searchTerm:focus {
+  color: #00B7FF; }
+
+.searchButton {
+  width: 40px;
+  height: 44px;
+  border: 3px solid #ffffff;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border-radius: 0 13px 13px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 3px; }
+
+#views-index {
+  background-image: url(../images/parallaxHome.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 100px; }
+
+#views-index img {
+  width: 800px; }
+
+#wheel {
+  padding-top: 100px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center; }
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 300px; }
+
+.home-buttons a {
+  background-color: #00B7FF;
+  padding: 25px;
+  border-radius: 22px; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  letter-spacing: 2px;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  margin: 2px 8px 0px 5px;
+  margin-right: 5px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 5px; }
+
+#login-body {
+  background-image: url(../images/login-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px; }
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 50vh;
+  width: 30vw;
+  border-radius: 18px;
+  opacity: .6; }
+
+#input-form input {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: white; }
+
+#input-form button {
+  color: #000; }
+
+/*# sourceMappingURL=style.css.map */
