@@ -2,9 +2,12 @@ body {
   margin: 2px 5px 0px 5px;
 }
 
-a {
-  color: #ffffff;
+.fa-cog {
+  color: black;
 }
+
+// ------------------   Navbar   --------------------------------
+
 
 nav{
   
@@ -23,11 +26,8 @@ nav{
   padding: 13px 0;
 }
 
-.fa-cog {
-  color: black;
-}
-
-a{
+a {
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -77,6 +77,11 @@ nav a[type="submit"] {
   justify-content: flex-end;
 }
 
+// Find a way to make the placeholder
+::placeholder{
+  font-size: 15px;
+}
+
 .searchTerm {
   width: 80%;
   border: 3px solid #00B7FF;
@@ -86,6 +91,8 @@ nav a[type="submit"] {
   border-radius: 26px ;
   outline: none;
   color: #9DBFAF;
+  font-size: 22px;
+  padding-left: 30px;
 }
 
 .searchTerm:focus{
@@ -107,7 +114,7 @@ nav a[type="submit"] {
 
 
 
-
+// -----------------   Views - Index (Home Page)   -------------------------------
 
 
 #views-index{
@@ -119,13 +126,9 @@ nav a[type="submit"] {
   
 }
 
-
-
 #views-index img{
   width: 800px;
 }
-
-
 
 
 #wheel{
@@ -151,28 +154,22 @@ nav a[type="submit"] {
   border-radius: 22px;
 }
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  letter-spacing: 2px;
-  color: white;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  margin: 2px 8px 0px 5px;
-  margin-right: 5px;
-
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-bottom: 5px;
-
-}
 
 
 
+// -------------------   User-views - login   ---------------------------
+
+
+
+
+
+
+
+
+
+
+
+// -------------------   User-views - signup   ---------------------------
 
 #login-body{
   background-image: url(../images/login-bg.jpg);
@@ -205,3 +202,65 @@ footer{
 #input-form button{
   color: #000;
 }
+
+
+
+
+
+// -------------------   user-views - profile   -------------------
+
+
+
+
+
+
+
+
+
+
+
+// -------------------   user-views - category (currently in profile)  -------------------
+
+.carousel{
+  // display: flex;
+  flex-direction: row;
+  // flex-wrap: nowrap;
+  background-color: aquamarine;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.carousel .tile{
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-color: pink;
+  margin: 25px;
+}
+
+
+
+
+
+  // --------------------   Footer   -------------------------------
+  
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    letter-spacing: 2px;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 2px 8px 0px 5px;
+    margin-right: 5px;
+  
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 5px;
+  
+  }

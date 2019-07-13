@@ -21,17 +21,18 @@
 
 
       <a href="/">
-        Go to celebrities
+        Home
       </a>
       <br>
 
-      <a href="/user">
-        User
+      <a href="/user/login">
+        Login
       </a>
 
       <a href="/user/profile">Profile</a>
+      <a href="/user/category">Category</a>
 
-      <a href="/user/signuplogin">sign up / Login</a>
+      <a href="/user/signup">Sign up</a>
 
       {{!-- Added a type submit to an ancor tag, is that even possible? It works :P --}}
       <div class="search">
@@ -40,10 +41,8 @@
           <i class="fa fa-search" aria-hidden="true"></i>
         </a>
       </div>
-
-
       
-      <form action="/logout" method="POST"><button>Logout</button></form>
+      <a href="/user/logout">Logout</a>
     </div>
   </nav>
 

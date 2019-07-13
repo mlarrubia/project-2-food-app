@@ -1,14 +1,21 @@
 <div id="login-body">
-
   <div id="login-form">
+
     <form action="/user/profile" method="POST">
       <div id="input-form">
         <h2>Sign Up</h2>
         <input type="text" name="theEmail" placeholder="Email" class="btn">
         <input type="text" name="theUsername" placeholder="Username" class="btn">
         <input type="text" name="thePassword" placeholder="Password" class="btn">
+
+        {{#if message}}
+        <div class="error-message">{{ message }}</div>
+        {{/if}}
+        <br><br>
+
         <button>Create Account</button>
       </div>
     </form>
+
   </div>
 </div>

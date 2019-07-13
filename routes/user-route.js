@@ -2,19 +2,28 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const bcrypt  = require('bcryptjs');
+const passport = require("passport");
+const ensureLogin = require("connect-ensure-login");
 
 
-// Get Home Page
-router.get('/signuplogin', (req, res, next) =>{
-  res.render('user-views/signuplogin');
+
+
+// ----------------------   Sign up   ----------------------------
+router.get('/signup', (req, res, next) =>{
+  res.render('user-views/signup', { "message": req.flash("error") });
 })
 
 // Signup Post
 router.post('/profile', (req, res, next)=>{
-  console.log("--------------------------",req);
+  console.log("--------------------------",req.body);
   const thePassword = req.body.thePassword;
   const theUsername = req.body.theUsername;
   const email       = req.body.theEmail
+
+  if (theUsername === "" || thePassword === "" || email === "") {
+    res.render("/signup", { message: "Indicate username and password" });
+    return;
+  }
 
   const salt = bcrypt.genSaltSync(12);
   const hashedPassWord =  bcrypt.hashSync(thePassword, salt);
@@ -25,8 +34,7 @@ router.post('/profile', (req, res, next)=>{
       email: email
   })
   .then(()=>{
-      console.log('yay');
-      // Ask why does it do something completely different with a "/profile" vs "profile"
+      console.log('yay');      
       res.redirect('/user/profile')
   })
   .catch((err)=>{
@@ -44,6 +52,44 @@ router.get('/', (req, res, next) =>{
 router.get('/profile', (req, res, next) =>{
   res.render('user-views/profile');
 })
+
+
+router.post("/profile", passport.authenticate("local", {
+  successRedirect: "/",
+  failureRedirect: "/signup",
+  failureFlash: true,
+  passReqToCallback: true
+}));
+
+// router.get('/logout', (req, res, next) =>{
+//   res.redirect('/login');
+// })
+
+// Cant get the logout to redirect
+router.get('/logout', (req, res, next)=>{
+  req.logout();
+  res.redirect("/user/login");
+})
+
+
+
+
+
+// -----------------------   Login Route   --------------------------------
+
+router.get('/login', (req, res, next) =>{
+  res.render('user-views/login', { "message": req.flash("error") });
+})
+
+
+
+
+// ----------------------   Category Route   ------------------------------
+
+router.get('/category', (req, res, next) =>{
+  res.render('user-views/category');
+})
+
 
 
 module.exports = router;
