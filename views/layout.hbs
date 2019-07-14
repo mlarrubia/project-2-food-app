@@ -8,16 +8,24 @@
   <title>{{title}}</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
-  <link rel="shortcut icon" type="image/png" href="/images/favicon32.png"/>
+  <link rel="shortcut icon" type="image/png" href="/images/favicon32.png" />
+  {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous">
+    </script> --}}
 </head>
 
 <body>
 
   <nav>
     <div class="navbar">
-       <a href="/">
+      <a href="/">
         <img src="/images/logo.png" alt="not working"></a>
-      
+
 
 
       <a href="/">
@@ -29,8 +37,11 @@
         Login
       </a>
 
-      <a href="/user/profile">Profile</a>
-      <a href="/user/category">Category</a>
+       {{!-- Maybe add path /user/cookbook  for /user/profile--}}
+      <a href="/user/cookbook">Cookbook</a>
+      <a href="/recipe/category">Category</a>
+      <a href="/recipe/card">Card</a>
+      <a href="/user/create-recipe">Create Recipe</a>
 
       <a href="/user/signup">Sign up</a>
 
@@ -41,7 +52,7 @@
           <i class="fa fa-search" aria-hidden="true"></i>
         </a>
       </div>
-      
+
       <a href="/user/logout">Logout</a>
     </div>
   </nav>
@@ -50,8 +61,11 @@
 
 
   <footer>
-      <div>Developed with <i class="fa fa-heart"></i> by Matthew Larrubia</div>
+    <div>Developed with <i class="fa fa-heart"></i> by Matthew Larrubia</div>
   </footer>
+
+
+
 
   <script src="/javascripts/script.js"></script>
 </body>

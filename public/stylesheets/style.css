@@ -152,10 +152,19 @@ nav a[type="submit"] {
 
 .carousel .tile {
   display: inline-block;
-  width: 300px;
-  height: 200px;
+  width: 257px;
+  height: 257px;
   background-color: pink;
-  margin: 25px; }
+  margin: 25px;
+  border-radius: 22px; }
+
+.category {
+  margin-bottom: 100px; }
+
+.recipeImg {
+  width: 257px;
+  height: 257px;
+  border-radius: 22px; }
 
 footer {
   position: fixed;
@@ -173,5 +182,10 @@ footer {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin-bottom: 5px; }
+
+.recipeCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 /*# sourceMappingURL=style.css.map */

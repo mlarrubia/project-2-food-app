@@ -107,5 +107,9 @@ app.use('/', index);
 const userRoute = require('./routes/user-route');
 app.use('/user', userRoute);
 
+const recipeRoute = require('./routes/recipe-route');
+app.use('/recipe', recipeRoute);
+
+
 
 module.exports = app;
