@@ -16,7 +16,7 @@ router.get('/signup', (req, res, next) =>{
 
 // Signup Post
 router.post('/profile', (req, res, next)=>{
-  console.log("--------------------------",req.body);
+  console.log("--------------------------",req.user);
   const thePassword = req.body.thePassword;
   const theUsername = req.body.theUsername;
   const email       = req.body.theEmail
@@ -36,7 +36,7 @@ router.post('/profile', (req, res, next)=>{
   })
   .then(()=>{
       console.log('yay');      
-      res.redirect('/user/cookbook')
+      res.redirect('/user/login')
   })
   .catch((err)=>{
       next(err);
@@ -45,15 +45,35 @@ router.post('/profile', (req, res, next)=>{
 
 
 // Only if the user is login 
-router.get('/cookbook', (req, res, next) =>{
-  res.render('user-views/cookbook');
+router.get('/cookbook', async (req, res, next) =>{
+    try {
+      const bRecipes = await Recipe.find({author:req.user._id,meal: "breakfast"});
+      const lRecipes = await Recipe.find({author:req.user._id,meal: "lunch"});
+      const dRecipes = await Recipe.find({author:req.user._id,meal: "dinner"});
+      const desRecipes = await Recipe.find({author:req.user._id,meal: "dessert"});
+      console.log(lRecipes);
+      res.render('user-views/cookbook', {breakfast: bRecipes, lunch: lRecipes, dinner: dRecipes, dessert: desRecipes});
+    } catch (error) {
+      next(error);
+    }
 })
 
 
+// -----------------------   Login Route   --------------------------------
 
-// router.get('/logout', (req, res, next) =>{
-//   res.redirect('/login');
-// })
+router.get('/login', (req, res, next) =>{
+  res.render('user-views/login', { "message": req.flash("error") });
+})
+
+router.post("/login", passport.authenticate("local", {
+  successRedirect: "/",
+  failureRedirect: "/user/login",
+  failureFlash: true,
+  passReqToCallback: true
+}));
+
+
+
 
 // Cant get the logout to redirect
 router.get('/logout', (req, res, next)=>{
@@ -65,57 +85,39 @@ router.get('/logout', (req, res, next)=>{
 
 
 
-// -----------------------   Login Route   --------------------------------
-
-router.get('/login', (req, res, next) =>{
-  res.render('user-views/login', { "message": req.flash("error") });
-})
-
-
-
 
 
 // ----------------------   Create Recipe   ----------------------------
 router.get('/create-recipe', (req, res, next) =>{
-  res.render('user-views/create-recipe', { "message": req.flash("error") });
+  if(!req.user){
+    res.redirect('/user/login')
+  }
+  else{
+    res.render('user-views/create-recipe', { "message": req.flash("error") });
+  }
 })
 
-// Recipe Post
-router.post('/createRecipe', (req, res, next)=>{
-  console.log("-------------------------------INSIDE THE POST ")
-  console.log("--------------------------", req.body);
-  const theCuisineType     = req.body.cuisineType;
-  const theName            = req.body.name;
-  const theIngredients     = req.body.ingredients
-  const theSteps           = req.body.steps
-  const theVideo           = req.body.video
-  const theImages          = req.body.images
 
-  // if (theUsername === "" || thePassword === "" || email === "") {
-  //   res.redirect("/signup", { message: "Indicate username and password" });
-  //   return;
-  // }
 
-  
 
-  Recipe.create({
-      cuisineType: theCuisineType,
-      name: theName,
-      ingredients: theIngredients,
-      steps: theSteps,
-      video: theVideo,
-      images: theImages
 
-  })
-  .then(()=>{
-      console.log('yay');      
-      res.redirect('/user/cookbook')
+
+// ----------------------  Cookbook   --------------------------------------
+
+router.get('/cookbook/:cuisine', (req, res, next) => {
+  console.log(req.params);
+  Recipe.find({cuisineType: req.params.cuisine})
+    .then((recipesFromDb) => {      
+      res.render('recipe-views/category', {allrecipes: recipesFromDb})
     })
-    .catch((err)=>{
-      res.redirect('/user/cookbook')
-      next(err);
-  })
+    .catch((err) => 
+    next(err))
 })
+
+
+
+
+
 
 
 module.exports = router;

@@ -21,6 +21,9 @@ a {
   color: #ffffff;
   text-decoration: none; }
 
+a.waves-effect {
+  color: blue; }
+
 nav a {
   font-size: 1.7em; }
 
@@ -89,13 +92,6 @@ nav a[type="submit"] {
   font-size: 20px;
   margin-top: 3px; }
 
-#views-index {
-  background-image: url(../images/parallaxHome.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-bottom: 100px; }
-
 #views-index img {
   width: 800px; }
 
@@ -115,6 +111,28 @@ nav a[type="submit"] {
   background-color: #00B7FF;
   padding: 25px;
   border-radius: 22px; }
+
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.slide {
+  height: 200px;
+  width: 200px !important;
+  background: red; }
+
+.wheel {
+  display: block;
+  position: absolute;
+  width: 600px; }
+
+.fruits {
+  width: 900px; }
 
 #login-body {
   background-image: url(../images/login-bg.jpg);
@@ -158,6 +176,11 @@ nav a[type="submit"] {
   margin: 25px;
   border-radius: 22px; }
 
+.tile:hover img {
+  transform: scale(1.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all .6s ease-in; }
+
 .category {
   margin-bottom: 100px; }
 
@@ -187,5 +210,30 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
+
+.modal-recipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.modal-body img {
+  height: 300px;
+  width: 300px;
+  border-radius: 12px; }
+
+.modal-body {
+  background-color: bisque;
+  padding: 25px; }
+
+.modal-content {
+  width: 800px; }
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  align-self: flex-start; }
 
 /*# sourceMappingURL=style.css.map */

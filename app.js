@@ -17,7 +17,7 @@ const User          = require("./models/User");
 
 
 mongoose
-  .connect('mongodb://localhost/project-food-app', {useNewUrlParser: true})
+  .connect('mongodb://localhost/project-food-app2', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -60,6 +60,7 @@ app.use(flash());
 passport.use(new LocalStrategy({
   passReqToCallback: true
 }, (req, username, password, next) => {
+  console.log("AHAHAHAHAHAHAHAHAHAHAHAHAHAH")
   User.findOne({ username }, (err, user) => {
     if (err) {
       return next(err);
@@ -96,9 +97,6 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 
-// default value for title local
-// app.locals.title = 'Express - Generated with IronGenerator';
-
 
 
 const index = require('./routes/index');
@@ -109,6 +107,10 @@ app.use('/user', userRoute);
 
 const recipeRoute = require('./routes/recipe-route');
 app.use('/recipe', recipeRoute);
+
+
+
+
 
 
 

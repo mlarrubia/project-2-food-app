@@ -1,36 +1,37 @@
 <div>
-  <h1>Street Tacos</h1>
+
+  <h1>{{recipeForCard.cuisineType}}</h1>
   <div class="recipeCard">
     <div class="recipe-video-card">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/IehX_6FHTNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="{{recipeForCard.video}}" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="recipe-ingredient-card">
       <h2>Ingredients</h2>
       <ul>
-        <li>Milk</li>
-        <li>Cheese</li>
-        <li>Meat</li>
-        <li>Tortillas</li>
-        <li>Sour Cream</li>
-        <li>Lettuce</li>
-        <li>Tomatoes</li>
-        <li>Guac</li>
+        {{#each recipeForCard}}
+        {{#each this.ingredients}}
+
+        <li>{{this}}</li>
+
+        {{/each}}
+        {{/each}}       
       </ul>
     </div>
     <div class="recipe-steps-card">
       <h2>Steps</h2>
       <ol>
-        <li>Step 1: akfdjajf</li>
-        <li>Step 2: akfdjajf</li>
-        <li>Step 3: akfdjajf</li>
-        <li>Step 4: akfdjajf</li>
-        <li>Step 5: akfdjajf</li>
-        
+        {{#each recipeForCard}}
+          {{#each this.steps}}
+            <li>{{this}}</li>
+          {{/each}}
+        {{/each}}
+
       </ol>
     </div>
   </div>
+  <div>
+    
+  </div>
 
 </div>
-
-
-
