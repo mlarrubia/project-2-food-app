@@ -131,7 +131,7 @@ h1{
   // background-image: url(/images/login-bg.jpg);
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -187,34 +187,7 @@ h1{
 
 // -------------------   Home page Parallax    ------------------------
 
-#container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  /* border: solid 1px red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.slide {
- 
-  height: 200px;
-  width: 200px !important;
-  background: red;
-}
-
-.wheel{
-  display: block;
-  position: absolute;
-  width: 600px; 
-}
-
-
-.fruits{
-  width: 900px;
-  
-}
 
 
 
@@ -312,8 +285,7 @@ h1{
   flex-direction: row;
   // flex-wrap: nowrap;
   background-color: rgba(255, 255, 255, 0.9); 
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: auto;
   white-space: nowrap;
   padding: 30px;
 }
@@ -541,3 +513,12 @@ $primary: #00acc1;
   text-transform: uppercase;
   border: none;
   }
+
+
+
+
+
+
+
+
+ 
