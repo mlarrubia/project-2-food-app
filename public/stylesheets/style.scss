@@ -10,11 +10,15 @@ body {
 
 
 nav{
-  
+  z-index: 10;
+  position: fixed;
+  top:0;
+  width: 100%;
   // margin: 2px 5px 0px 5px;
   background-color: #00B7FF;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+
 }
 
 .navbar{
@@ -120,7 +124,25 @@ nav a[type="submit"] {
 
 // -----------------   Views - Index (Home Page)   -------------------------------
 
+h1{
+  margin-top: 25px;
+}
+#homepage{
+  // background-image: url(/images/login-bg.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.infopage{
+  margin: 100px 25px 0 50px;
+  width: 800px;
+}
+
+h1{
+  text-align: center;
+}
 
 // #views-index{
 //   background-image: url(../images/parallaxHome.png);
@@ -198,7 +220,27 @@ nav a[type="submit"] {
 
 // -------------------   User-views - login   ---------------------------
 
+.loginpage{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // background-color: blue;
+  height: 100vh;
+  padding: 200px;
+}
 
+.login-form{
+
+}
+
+.login-picture{
+  background-image: url('/images/image3.jpg');
+  background-size: cover;
+  height: 700px;
+  width: 900px;
+  background-color: red;
+}
 
 
 
@@ -209,6 +251,11 @@ nav a[type="submit"] {
 
 
 // -------------------   User-views - signup   ---------------------------
+
+
+
+
+
 
 #login-body{
   background-image: url(../images/login-bg.jpg);
@@ -264,10 +311,11 @@ nav a[type="submit"] {
   // display: flex;
   flex-direction: row;
   // flex-wrap: nowrap;
-  background-color: aquamarine;
+  background-color: rgba(255, 255, 255, 0.9); 
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  padding: 30px;
 }
 
 .carousel .tile{
@@ -373,3 +421,123 @@ nav a[type="submit"] {
     
 
 }
+
+
+
+
+
+// -------------------   Maps    -------------------------------
+
+
+// Color for map maybe #427331
+
+
+
+.worldmap{
+  display: flex;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+}
+// body {
+//   background-color: #f0f0f0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+
+$primary: #00acc1;
+
+.map-container {
+  padding: 3.2rem .8rem;
+  position: relative;
+  display: inline-block;
+  img {
+    width: 100%;
+  }
+  .point {
+    cursor: pointer;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color:  $primary;
+    border-radius: 50%;
+    transition: all .3s ease;
+    will-change: transform, box-shadow;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 rgba($primary, 0.4);
+    animation: pulse 3s infinite;
+    &:hover {
+      animation: none;
+      transform:  translate(-50%, -50%) scale3D(1.35, 1.35 ,1);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+  }
+  .mexican { top: 38%; left: 12%; }
+  .american { top: 26%; left: 17%; }
+  .italian { top: 35%; left: 50%; }
+  .chinese { top: 35%; left: 76%; }
+  .caribbean {top: 45%; left: 20%; }
+  .indian {top: 45%; left: 69%; }
+  .thai {top: 55%; left: 77%; }
+  .southamerican {top: 65%; left: 26%; }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba($primary, 0.5); }
+  70% { box-shadow: 0 0 0 25px rgba($primary, 0); }
+  100% { box-shadow: 0 0 0 0 rgba($primary, 0); }
+}
+
+
+
+
+
+
+
+// ---------------------   Parallax on Categories   -------------------------------
+
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.pimg1{
+  background-image: url('/images/breakfast.jpg');
+  height: 50%;
+  padding: 200px;
+}
+.pimg2{
+  background-image: url('/images/lunch.jpg');
+  height: 50%;
+  padding: 200px;
+}
+.pimg3{
+  background-image: url('/images/dinner.jpg');
+  height: 50%;
+  padding: 200px;
+}
+.pimg4{
+  background-image: url('/images/dessert.jpg');
+  height: 50%;
+  padding: 200px;
+}
+
+.ptext{
+  font-size: 35px;
+  text-align: center;
+  color: #000;
+  font-size: 47px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  border: none;
+  }
