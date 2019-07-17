@@ -27,10 +27,10 @@ router.post('/new', (req, res, next) => {
   const theMeal = req.body.meal;
   const theCuisineType = req.body.cuisineType;
   const theName = req.body.name;
-  const theIngredients = req.body.ingredients
-  const theSteps = req.body.steps
-  const theVideo = req.body.video
-  const theImages = req.body.images
+  const theIngredients = req.body.ingredients.split(',');
+  const theSteps = req.body.steps.split(',');
+  const theVideo = req.body.video;
+  const theImages = req.body.images;
 
   Recipe.create({
     author: req.user,
@@ -40,8 +40,7 @@ router.post('/new', (req, res, next) => {
     ingredients: theIngredients,
     steps: theSteps,
     video: theVideo,
-    images: theImages,
-    // username: Math.random()
+    images: theImages
 
   })
     .then(() => {

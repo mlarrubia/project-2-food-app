@@ -23,10 +23,12 @@ $(document).ready(function () {
   // -------------------   World Map  ------------------------------
 
 
-  $(document).ready(function(){
+  $(document).ready(function () {
     tippy('.tippy', {
       theme: 'light',
       size: 'big',
       arrow: true
     })
-});
+  });
+
+})

@@ -14,6 +14,7 @@ const passport      = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const flash         = require("connect-flash");
 const User          = require("./models/User");
+var unirest         = require('unirest');
 
 
 mongoose

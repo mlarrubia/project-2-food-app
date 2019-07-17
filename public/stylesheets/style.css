@@ -219,6 +219,9 @@ footer {
   border-bottom-right-radius: 12px;
   margin-bottom: 5px; }
 
+#create-recipe-body {
+  margin-top: 100px; }
+
 .recipeCard {
   display: flex;
   flex-direction: row;
