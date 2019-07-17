@@ -18,36 +18,18 @@
 
   <nav>
     <div class="navbar">
-      <a href="/">
-        <img src="/images/logo.png" alt="not working"></a>
-
-
-
-      <a href="/">
-        Home
-      </a>
-      <br>
-
-      <a href="/user/login">
-        Login
-      </a>
-
-       {{!-- Maybe add path /user/cookbook  for /user/profile--}}
+      <a href="/"><img src="/images/logo.png" alt="not working"></a>
+      <a href="/">Home</a>
+      <a href="/user/login">Login</a>
       <a href="/user/cookbook">Cookbook</a>
       <a href="/recipe/categories/Mexican">Category</a>
       <a href="/recipe/card">Card</a>
       <a href="/user/create-recipe">Create Recipe</a>
-
       <a href="/user/signup">Sign up</a>
-
-      {{!-- Added a type submit to an ancor tag, is that even possible? It works :P --}}
       <div class="search">
         <input type="text" class="searchTerm" placeholder="What are you looking for?">
-        <a type="submit" href="submit" class="searchButton btn">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </a>
+        <a type="submit" href="submit" class="searchButton btn"><i class="fa fa-search" aria-hidden="true"></i></a>
       </div>
-
       <a href="/user/logout">Logout</a>
     </div>
   </nav>
@@ -64,7 +46,7 @@
 
 
 
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
