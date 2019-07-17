@@ -220,7 +220,27 @@ h1{
 
 // -------------------   User-views - login   ---------------------------
 
+.loginpage{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // background-color: blue;
+  height: 100vh;
+  padding: 200px;
+}
 
+.login-form{
+
+}
+
+.login-picture{
+  background-image: url('/images/image3.jpg');
+  background-size: cover;
+  height: 700px;
+  width: 900px;
+  background-color: red;
+}
 
 
 
@@ -231,6 +251,11 @@ h1{
 
 
 // -------------------   User-views - signup   ---------------------------
+
+
+
+
+
 
 #login-body{
   background-image: url(../images/login-bg.jpg);
