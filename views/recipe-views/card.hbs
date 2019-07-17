@@ -15,23 +15,27 @@
         <li>{{this}}</li>
 
         {{/each}}
-        {{/each}}       
+        {{/each}}
       </ul>
     </div>
     <div class="recipe-steps-card">
       <h2>Steps</h2>
       <ol>
         {{#each recipeForCard}}
-          {{#each this.steps}}
-            <li>{{this}}</li>
-          {{/each}}
+        {{#each this.steps}}
+        <li>{{this}}</li>
+        {{/each}}
         {{/each}}
 
       </ol>
     </div>
   </div>
-  <div>
-    
+  {{!-- Need to happen only if recipe has userID --}}
+  <div id="deleteRecipe">
+    <form action="/recipe/delete/{{recipeForCard._id}}" method="POST">
+      <button class="btn">Delete This Book </button>
+    </form>
   </div>
+
 
 </div>

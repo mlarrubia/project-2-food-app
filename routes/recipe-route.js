@@ -85,9 +85,23 @@ router.get('/categories/:cuisine',async (req, res, next) => {
       next(err);
     })     
   }); 
-  
-  
-  
+
+
+
+
+  // ---------------------   Delete Recipe   -----------------------------------
+
+  router.post('/delete/:id', (req, res, next)=>{
+    Recipe.findByIdAndRemove(req.params.id)
+    .then(()=>{
+        res.redirect('/user/cookbook');
+    })
+    .catch((err)=>{
+        next(err);
+    })
+
+
+})
 
 
 
