@@ -43,8 +43,8 @@ router.post('/new', (req, res, next) => {
     images: theImages
 
   })
-    .then(() => {
-      console.log('yay');
+    .then((newRecipe) => {
+      console.log('yay', newRecipe);
       res.redirect('/user/cookbook')
     })
     .catch((err) => {
