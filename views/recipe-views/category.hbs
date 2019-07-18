@@ -39,11 +39,11 @@
                                 <div>
                                     <h1>Ingredients</h1>
                                     <ul>
-
-                                        {{#each this.ingredients}}
-
+                                        
+                                        {{#each this.ingredients }}
+                                        {{!-- {{#if @index < 5}} --}}
                                         <li>{{this}}</li>
-
+                                        {{!-- {{/if}} --}}
                                         {{/each}}
 
                                     </ul>

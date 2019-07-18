@@ -21,16 +21,18 @@ router.get('/card', (req, res, next) => {
   res.render('recipe-views/card');
 })
 
-router.post('/new', (req, res, next) => {
+router.post('/new', uploadMagic.single("image"), (req, res, next) => {
   console.log("-------------------------------INSIDE THE POST ")
-  console.log("--------------------------", req.body);
+  console.log("--------------------------", req.file);
   const theMeal = req.body.meal;
   const theCuisineType = req.body.cuisineType;
   const theName = req.body.name;
   const theIngredients = req.body.ingredients.split(',');
   const theSteps = req.body.steps.split(',');
   const theVideo = req.body.video;
-  const theImages = req.body.images;
+  // if(req.file){
+    const theImage = req.file.url;
+  // }
 
   Recipe.create({
     author: req.user,
@@ -40,7 +42,7 @@ router.post('/new', (req, res, next) => {
     ingredients: theIngredients,
     steps: theSteps,
     video: theVideo,
-    images: theImages
+    image: theImage
 
   })
     .then((newRecipe) => {
@@ -63,6 +65,7 @@ router.get('/categories/:cuisine',async (req, res, next) => {
     const lRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Lunch"});
     const dRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Dinner"});
     const desRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Dessert"});
+    
     console.log(lRecipes);
     res.render('recipe-views/category', {breakfast: bRecipes, lunch: lRecipes, dinner: dRecipes, dessert: desRecipes});
   } catch (error) {
