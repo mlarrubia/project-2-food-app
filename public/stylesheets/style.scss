@@ -7,13 +7,14 @@ body {
 }
 
 // ------------------   Navbar   --------------------------------
-
+// #00B7FF
 
 nav{
   z-index: 10;
   position: fixed;
   top:0;
   width: 100%;
+  height: 50px;
   // margin: 2px 5px 0px 5px;
   background-color: #00B7FF;
   border-top-left-radius: 12px;
@@ -24,10 +25,11 @@ nav{
 .navbar{
   display: flex;
   flex-direction: row;
+  align-content: flex-start;
+  align-self: flex-start;
   justify-content: space-around;
   align-items: center;
-  margin: 0 10px;
-  padding: 13px 0;
+ 
 }
 
 a {
@@ -44,7 +46,7 @@ nav a{
 }
 
 nav img{
-  width: 60px;
+  width: 100px;
   border-radius: 12px;
   margin-right: 10px;
 }
@@ -348,7 +350,32 @@ h1{
   //  -----------------  Create Recipe   ------------------------------------
 
   #create-recipe-body{
-    margin-top: 100px;
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    margin: 100px auto 0 auto;
+    background: url("/images/cutboardfianl.jpg") no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    position: fixed;
+
+  }
+
+
+  #create-recipe-form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 175px;
+  }
+
+  #create-recipe-input-form{
+    background-color: bisque;
+    opacity: .4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+    border-radius: 22px;
   }
 
 

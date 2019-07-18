@@ -9,6 +9,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 50px;
   background-color: #00B7FF;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px; }
@@ -16,10 +17,10 @@ nav {
 .navbar {
   display: flex;
   flex-direction: row;
+  align-content: flex-start;
+  align-self: flex-start;
   justify-content: space-around;
-  align-items: center;
-  margin: 0 10px;
-  padding: 13px 0; }
+  align-items: center; }
 
 a {
   color: #ffffff;
@@ -32,7 +33,7 @@ nav a {
   font-size: 1.7em; }
 
 nav img {
-  width: 60px;
+  width: 100px;
   border-radius: 12px;
   margin-right: 10px; }
 
@@ -220,7 +221,28 @@ footer {
   margin-bottom: 5px; }
 
 #create-recipe-body {
-  margin-top: 100px; }
+  height: 80vh;
+  width: 90vw;
+  display: flex;
+  margin: 100px auto 0 auto;
+  background: url("/images/cutboardfianl.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  position: fixed; }
+
+#create-recipe-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 175px; }
+
+#create-recipe-input-form {
+  background-color: bisque;
+  opacity: .4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px;
+  border-radius: 22px; }
 
 .recipeCard {
   display: flex;

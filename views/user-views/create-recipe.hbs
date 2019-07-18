@@ -1,25 +1,28 @@
-<div id="create-recipe-body">
-  <div id="create-recipe-form">
+<div class="create-form-background">
 
-    <form action="/recipe/new" method="POST">
-      <div id="create-recipe-input-form">
-        <h2>Sign Up</h2>
-        <input type="text" name="meal" placeholder="[breakfast, lunch, dinner, dessert" class="btn">
-        <input type="text" name="cuisineType" placeholder="cuisineType" class="btn">
-        <input type="text" name="name" placeholder="name" class="btn">
-        <input type="text" name="ingredients" placeholder="ingredients" class="btn">
-        <input type="text" name="steps" placeholder="steps" class="btn">
-        <input type="text" name="video" placeholder="video" class="btn">
-        <input type="text" name="images" placeholder="images" class="btn">
+  <div id="create-recipe-body">
+    <div id="create-recipe-form">
 
-        {{#if message}}
-        <div class="error-message">{{ message }}</div>
-        {{/if}}
-        <br><br>
+      <form action="/recipe/new" method="POST">
+        <div id="create-recipe-input-form">
+          <h2>Sign Up</h2>
+          <input type="text" name="meal" placeholder="[breakfast, lunch, dinner, dessert" class="btn">
+          <input type="text" name="cuisineType" placeholder="cuisineType" class="btn">
+          <input type="text" name="name" placeholder="name" class="btn">
+          <input type="text" name="ingredients" placeholder="ingredients" class="btn">
+          <input type="text" name="steps" placeholder="steps" class="btn">
+          <input type="text" name="video" placeholder="video" class="btn">
+          <input type="text" name="images" placeholder="images" class="btn">
 
-        <button>Create Recipe</button>
-      </div>
-    </form>
+          {{#if message}}
+          <div class="error-message">{{ message }}</div>
+          {{/if}}
+          <br><br>
 
+          <button>Create Recipe</button>
+        </div>
+      </form>
+
+    </div>
   </div>
 </div>
