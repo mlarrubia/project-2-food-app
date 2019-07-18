@@ -14,1359 +14,926 @@ mongoose
 
 
 
-let mexicanbreakfast = [
+let mexicandessert = [
+
 
   {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Hannah Williams"
-        }
-      ],
-      "datePublished": "2017-07-11T22:51:04",
-      "description": "Here's what you need: sausage link, egg, flour tortilla, shredded cheddar cheese",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/c08ab5dacb424699a3ef8f31e50f32bb/makeaheadbreakfast-fb.jpg",
-      "name": "Make-Ahead Breakfast Quesadilla Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
-        }
-      },
-      "recipeIngredient": [
-            "2 sausage links"
-            ,"2 eggs, lightly beaten"
-            ,"1 flour tortilla, burrito-sized"
-            ,"½ cup cheddar cheese, shredded"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "In a skillet thoroughly cook the sausage and eggs."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Place mixture in the center of a flour tortilla. Top with cheese, and fold the edges inward to form a sealed pocket."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Heat on a skillet, seam-side down. Flip and cook until golden brown."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "You can freeze up to a month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "12 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "97",
-        "ratingCount": "246",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Pan Fry",
-      "keywords": "breakfast, cheese, easy, eggs, healthy, meal prep, muffins, quesadilla, yogurt",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "37 calories",
-        "carbohydrateContent":  "0 grams",
-        "fatContent":  "2 grams",
-        "fiberContent": "0 grams",
-        "proteinContent": "2 grams",
-        "sugarContent": "0 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "totalTime": "PT30M",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/26151/mp4_720x1280/1489102618",
-        "description": "Here's what you need: sausage link, egg, flour tortilla, shredded cheddar cheese",
-        "duration": "PT02M29S",
-        "name": "Make-Ahead Breakfast Quesadilla Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/c08ab5dacb424699a3ef8f31e50f32bb/makeaheadbreakfast-fb.jpg",
-        "uploadDate": "2017-07-11T22:51:04"
-      }]
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tasty"
+      }
+    ],
+    "datePublished": "2017-04-26T19:46:05",
+    "description": "Here's what you need: doce de leite, butter, egg yolk, egg, flour, butter, flour, ramekins",
+    "image": "https://img.buzzfeed.com/video-api-prod/assets/761d03877ebd465aa948379925c990c4/Thumb_C_-_FB.jpg",
+    "name": "Dulce De Leche Lava Cake Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
+    "recipeIngredient": [
+          "1 2/3 cups Doce de Leite"
+          ,"1/2 cup melted butter"
+          ,"2 egg yolks"
+          ,"2 whole eggs"
+          ,"1/4 cup flour"
+          ,"Additional butter and flour to line ramekins."
+          ,"n/a"
+          ,"* 4 ramekins"
+    ],
+    "recipeInstructions": [
         {
-          "@type": "Person",
-          "name": "Daisy Garcia"
+          "@type": "HowToStep",
+          "text": "In a medium bowl, mix Doce de Leite and melted butter."
         }
-      ],
-      "datePublished": "2017-04-26T19:45:52",
-      "description": "Here's what you need: chorizo, egg, shredded cheddar cheese, onion, bell pepper, vegetable oil, biscuit dough, egg wash, flour",
-      "image": "https://img.buzzfeed.com/video-api-prod/assets/43ec4c37221442df96d7a2a0a7cf92bf/BFV11556_BreakfastBraid-ThumbTextless1080.jpg",
-      "name": "Breakfast Biscuits Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+        ,{
+          "@type": "HowToStep",
+          "text": "In a separate medium bowl, mix egg yolks and eggs. Once combined, mix in Doce de Leite mixture."
         }
-      },
-      "recipeIngredient": [
-            "10 ounces chorizo"
-            ,"4 eggs"
-            ,"1 cup cheddar cheese, shredded"
-            ,"½ cup onion, diced"
-            ,"1 cup bell pepper, diced"
-            ,"2 tablespoons vegetable oil"
-            ,"1 tube biscuit dough"
-            ,"Egg wash"
-            ,"Flour for dusting"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Heat the oil in a frying pan. Add the onion and stir until translucent. Add the chorizo."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "NOTE: You don’t need to use more salt since chorizo has enough salt."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Cook for about 5 minutes, stirring occasionally. Add the bell peppers and stir."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Beat the eggs until the yolks break and add them to the chorizo mix."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Stir until the eggs are just cooked."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Preheat oven to 375˚F (190˚C)."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Flour a surface and open a tube of biscuits. Place them close to each other. Roll them out with a rolling pin to create one single dough."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Sprinkle cheddar cheese over the rolled biscuit dough. Add the chorizo and eggs. Roll it up and pinch the edge to seal it to the roll."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Brush the roll with egg wash."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Using scissors, make slits in the dough about 2 inches (5 cm) apart from each other. Then twist them to alternating sides to create a braided look."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Bake for 25 minutes, or until golden brown."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "7 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "91",
-        "ratingCount": "22",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Pan Fry",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "561 calories",
-        "carbohydrateContent":  "33 grams",
-        "fatContent":  "37 grams",
-        "fiberContent": "1 grams",
-        "proteinContent": "22 grams",
-        "sugarContent": "7 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/12478/mp4_720x1280/1476912016",
-        "description": "Here's what you need: chorizo, egg, shredded cheddar cheese, onion, bell pepper, vegetable oil, biscuit dough, egg wash, flour",
-        "duration": "PT00M00S",
-        "name": "Breakfast Biscuits Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/43ec4c37221442df96d7a2a0a7cf92bf/BFV11556_BreakfastBraid-ThumbTextless1080.jpg",
-        "uploadDate": "2017-04-26T19:45:52"
-      }]
+        ,{
+          "@type": "HowToStep",
+          "text": "Add in flour, a little at a time, to ensure everything is mixed evenly and the batter is smooth."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Line ramekins with butter and flour. Pour out excess flour. Divide Doce de Leite batter in each ramekin. Leave about ¼ inches (6 mm) from the top."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Bake the cakes for 425˚F (220˚C) for 12-14 minutes. The cakes should be golden brown and should jiggle in the middle. The more you bake, the less molten the center will be when you cut into it."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Run a knife along the edges of the ramekin to loosen and invert onto a plate. Serve with ice cream or whipped cream."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "4 cakes",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "99",
+      "ratingCount": "105",
+      "bestRating": "100",
+      "worstRating": "0"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Tiffany Lo"
-        }
-      ],
-      "datePublished": "2017-10-19T17:03:35",
-      "description": "Here's what you need: turkey bacon, sweet potato, red bell pepper, fresh spinach, egg, olive oil, salt, pepper, shredded cheese, whole wheat tortillas",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/1fad19cb0b4b429b8ad05ec61f96a298/BFV30507_Kid-FriendlyBreakfastMealPrep.jpg",
-      "name": "Healthier Frozen Breakfast Burritos Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
-        }
-      },
-      "recipeIngredient": [
-            "4-6 slices turkey bacon"
-            ,"1 sweet potato, peeled and diced"
-            ,"1 red bell peppers, diced"
-            ,"6 cups spinach, sauteed"
-            ,"6 eggs, beaten"
-            ,"Olive oil or oil of choice"
-            ,"Salt, to taste"
-            ,"Pepper, to taste"
-            ,"Shredded cheese of choice, to taste"
-            ,"Whole wheat tortillas"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "In a large skillet over medium heat, cook turkey bacon according to package instructions. Remove and set to the side."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Using the same skillet, add diced sweet potatoes and season with salt and pepper. Cook until soft. Remove from pan and set aside."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add diced red bell peppers and cook until softened. Remove from pan and set aside."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Cook spinach, then set aside."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Reduce heat to medium-low and pour in beaten eggs. Remove from pan once cooked."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To assemble the burritos, place down parchment paper, then put the tortilla on top. Add scrambled eggs, sweet potatoes, spinach, bell pepper, turkey bacon, and cheese."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Fold the left and right side of the burrito in, then fold the bottom up and roll tightly."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Roll burrito into parchment paper."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Serve now or place into a bag or reusable container."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Transfer to the freezer. Freeze for up to 1 month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To reheat, remove burrito from parchment paper and wrap in a damp paper towel."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Microwave for 3 minutes or until warm."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Rest for one minute."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "6 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "100",
-        "ratingCount": "87",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Pan Fry",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "135 calories",
-        "carbohydrateContent":  "0 grams",
-        "fatContent":  "10 grams",
-        "fiberContent": "0 grams",
-        "proteinContent": "8 grams",
-        "sugarContent": "0 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/57232/mp4_720x1280/1508449017",
-        "description": "Here's what you need: turkey bacon, sweet potato, red bell pepper, fresh spinach, egg, olive oil, salt, pepper, shredded cheese, whole wheat tortillas",
-        "duration": "PT03M57S",
-        "name": "Healthier Frozen Breakfast Burritos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/1fad19cb0b4b429b8ad05ec61f96a298/BFV30507_Kid-FriendlyBreakfastMealPrep.jpg",
-        "uploadDate": "2017-10-19T17:03:35"
-      }]
+    "cookingMethod": "Bake",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "561 calories",
+      "carbohydrateContent":  "39 grams",
+      "fatContent":  "39 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "13 grams",
+      "sugarContent": "29 grams"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Joey Firoben"
-        }
-      ],
-      "datePublished": "2017-05-11T21:21:32",
-      "description": "Here's what you need: coconut oil, turkey sausage, cannellini bean, diced tomato, salt, black pepper, dried thyme, egg, spinach, greek yogurt, ripe avocado, whole wheat flour tortillas",
-      "image": "https://img.buzzfeed.com/video-api-prod/assets/31d4cfbbe73f475f830b30f47083da39/BFV14575_TurkeySausageBreakfastBurritoThumb.jpg",
-      "name": "Turkey Sausage Breakfast Burrito Recipe by Tasty",
+    "recipeCategory": "Bakery Goods",
+    "recipeCuisine": "Fusion",
+    "totalTime": "PT30M",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/32136/mp4_720x1280/1495125333",
+      "description": "Here's what you need: doce de leite, butter, egg yolk, egg, flour, butter, flour, ramekins",
+      "duration": "PT00M46S",
+      "name": "Dulce De Leche Lava Cake Recipe by Tasty",
       "publisher": {
         "@type": "Organization",
         "name": "Tasty",
         "logo": {
           "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+          "url": "https://tasty.co/favicon.ico"
         }
       },
-      "recipeIngredient": [
-            "1 tablespoon coconut oil"
-            ,"1 pound turkey sausage"
-            ,"1 can cannellini beans, rinsed and drained"
-            ,"1 can diced tomatoes, drained"
-            ,"½ teaspoon salt"
-            ,"½ teaspoon black pepper"
-            ,"1 teaspoon dried thyme"
-            ,"4 eggs, beaten"
-            ,"4 cups spinach"
-            ,"Greek yogurt"
-            ,"2 ripe avocados"
-            ,"6-8 whole wheat flour tortillas"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Heat the oil in a large nonstick skillet over medium-high heat."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Toss in the sausage and break up with a wooden spoon until brown."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Pour in the beans, tomatoes, salt, pepper, and thyme, and mix until everything has warmed through."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Move the contents of the pan out of the way to form an open well in the center of the pan. Pour the eggs into the well, and as the bottom of the eggs start to cook and solidify, use a spatula to gently scrape the cooked bits off the bottom and slowly mix with the other contents of the pan."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add the spinach to the pan and mix."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Spoon a portion of the mixture onto a warmed tortilla, top with avocado slices and Greek yogurt, and roll the tortilla into a burrito."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "6 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "92",
-        "ratingCount": "61",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "515 calories",
-        "carbohydrateContent":  "50 grams",
-        "fatContent":  "37 grams",
-        "fiberContent": "9 grams",
-        "proteinContent": "29 grams",
-        "sugarContent": "5 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Mexican",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/16535/mp4_720x1280/1480707596",
-        "description": "Here's what you need: coconut oil, turkey sausage, cannellini bean, diced tomato, salt, black pepper, dried thyme, egg, spinach, greek yogurt, ripe avocado, whole wheat flour tortillas",
-        "duration": "PT00M00S",
-        "name": "Turkey Sausage Breakfast Burrito Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/31d4cfbbe73f475f830b30f47083da39/BFV14575_TurkeySausageBreakfastBurritoThumb.jpg",
-        "uploadDate": "2017-05-11T21:21:32"
-      }]
+      "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/761d03877ebd465aa948379925c990c4/Thumb_C_-_FB.jpg",
+      "uploadDate": "2017-04-26T19:46:05"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tasty"
+      }
+    ],
+    "datePublished": "2017-04-26T19:46:13",
+    "description": "Here's what you need: all-purpose flour, salt, sugar, zest of 1 lemon, boiling water, butter, vanilla extract, egg, peanut or vegetable oil, cinnamon sugar, strawberry jam, clotted cream, piping bag with star nozzle",
+    "image": "https://img.buzzfeed.com/video-api-prod/assets/87951f208ce74724b4d4510d07236676/Video_Thumb.jpg",
+    "name": "Afternoon Tea Churros Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
+    "recipeIngredient": [
+          "140g plain flour"
+          ,"Pinch of salt"
+          ,"2 tsp caster sugar"
+          ,"Lemon"
+          ,"n/a"
+          ,"120g butter"
+          ,"1 tsp vanilla extract"
+          ,"3 eggs"
+          ,"n/a"
+          ,"Cinnamon sugar (cinnamon and caster sugar mixed)"
+          ,"Strawberry jam &amp; clotted cream to serve"
+          ,"n/a"
+          ,"Piping bag w/ star nozzle"
+    ],
+    "recipeInstructions": [
         {
-          "@type": "Person",
-          "name": "Claire Nolan"
+          "@type": "HowToStep",
+          "text": "Sift the flour into a large bowl.  Add the salt, sugar and lemon zest and mix to combine."
         }
-      ],
-      "datePublished": "2017-12-14T16:30:08",
-      "description": "Here's what you need: pancake mix, egg, milk, breakfast sausage, egg, milk, salt, pepper, shredded mexican cheese blend",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/123996.jpg",
-      "name": "Sheet Pan Breakfast Sandwich Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+        ,{
+          "@type": "HowToStep",
+          "text": "In a large saucepan, add the boiling water, butter and vanilla. Heat gently until the butter is melted and the mixture is boiling. Turn off the heat and add the flour mixture. Beat quickly until it is lump-free, then let cool for 5 minutes."
         }
-      },
-      "recipeIngredient": [
-            "6 cups pancake mix"
-            ,"6 eggs"
-            ,"3 cups milk"
-            ,"3 pounds breakfast sausage"
-            ,"12 eggs"
-            ,"½ cup milk"
-            ,"Salt, to taste"
-            ,"Pepper, to taste"
-            ,"1 cup shredded Mexican cheese blend"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Preheat oven to 425˚F (220˚C)."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In a large bowl, combine pancake mix, eggs and milk being careful not to over-mix."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Divide batter evenly onto two parchment paper-lined 17x11 inch baking sheets. Spread evenly and bake for 15 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In a large bowl, combine eggs, milk, salt and pepper. Pour the eggs onto a parchment paper-lined 17x11 inch baking sheet. Spread evenly and bake for 15-17 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Line another 18x13 inch baking sheet with parchment paper and spread out the sausage from corner to corner. Decrease oven temperature to 350˚F (180˚C) and bake for 20 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Drain fat, and sprinkle cheese on top of the sausage. Bake for another 5 minutes at the same temperature."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "On a cutting board, layer the sandwich starting with a pancake, followed by sausage, egg, and the second pancake. Slice into breakfast size sandwiches and serve immediately, or wrap in parchment and freeze in a container for up to 1 month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "24 sandwiches",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "88",
-        "ratingCount": "100",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Bake",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "393 calories",
-        "carbohydrateContent":  "33 grams",
-        "fatContent":  "20 grams",
-        "fiberContent": "1 grams",
-        "proteinContent": "18 grams",
-        "sugarContent": "8 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "American",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/68196/landscape_720/1513296516",
-        "description": "Here's what you need: pancake mix, egg, milk, breakfast sausage, egg, milk, salt, pepper, shredded mexican cheese blend",
-        "duration": "PT01M56S",
-        "name": "Sheet Pan Breakfast Sandwich Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/123996.jpg",
-        "uploadDate": "2017-12-14T16:30:08"
-      }]
+        ,{
+          "@type": "HowToStep",
+          "text": "Beat in the eggs 1 at a time until the mixture is thick and sticky. Let cool for another 10-15 minutes."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Transfer the churro mixture into a piping bag with a wide star nozzle. Heat the oil in a large saucepan until  it reaches 350°F (180°C). Pipe the churro mix into the oil, snipping the ends with kitchen shears. Cook 3-4 at a time for 5 minutes, or until golden brown."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Drain the churros on paper towels, then coat in a cinnamon-sugar mix. Serve with strawberry jam and clotted cream for a delicious twist on afternoon tea."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "10 pieces",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "83",
+      "ratingCount": "73",
+      "bestRating": "100",
+      "worstRating": "0"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Matthew Johnson"
-        }
-      ],
-      "datePublished": "2018-06-15T23:26:20",
-      "description": "Here's what you need: guajillo chiles, ancho chilies, chiles de árbol, tomato, water, onion, garlic, salt, corn tortilla, canola oil, large egg, queso fresco, red onion, avocado, fresh cilantro",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/163764.jpg",
-      "name": "Chilaquiles With Andrea Mares Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
-        }
-      },
-      "recipeIngredient": [
-            "3 guajillo chiles, stems removed and seeded"
-            ,"2 ancho chiles, stems removed and seeded"
-            ,"3 chiles de árbol, stems removed and seeded"
-            ,"1 tomato, halved"
-            ,"3 cups water"
-            ,"½ onion, chopped"
-            ,"3 cloves garlic"
-            ,"Salt, to taste"
-            ,"16 corn tortillas, cut into triangles"
-            ,"Canola oil, for frying"
-            ,"4 large eggs"
-            ,"½ cup crumbled queso fresco, for serving"
-            ,"¼ cup diced red onions, for serving"
-            ,"1 avocado, sliced, for serving"
-            ,"2 tablespoons chopped fresh cilantro, for serving"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "In a small pot, combine the guajillos, anchos, chiles de árbol, halved tomato, and water. Bring to a boil over [level] heat. Cover cover and cook for 10 minutes, or until the peppers are rehydrated and softened."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Using a slotted spoon, transfer the peppers and tomato to a blender. Add the onion, garlic, salt, and about ½ cup (60 g) of the pepper cooking liquid. Blend until smooth, adding more liquid as needed if the sauce is too thick."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Cut the corn tortillas into triangles. Add to a cast iron with around 2 cups (480 ml) of heated oil."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Fry the tortilla triangles until golden and crispy. Leaving the chips in the pan, remove all but 2 tablespoons of the hot oil."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add the eggs to the pan and stir around with the chips. Once the eggs are almost set, pour in the chile sauce and stir until well-combined."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Top the chilaquiles with queso fresco, red onion, avocado, and cilantro."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Serve immediately."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "4 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "95",
-        "ratingCount": "71",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Deep-Fry",
-      "keywords": ", baking, best, best ever, buzzfeed, chilaquiles, classic, cook, cooking, easy, easy recipes, food, how to, how to bake, how to cook, mexican food, perfect, quick and easy, recipe, recipes, tasty, ultimate, yum, yummy",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "508 calories",
-        "carbohydrateContent":  "56 grams",
-        "fatContent":  "23 grams",
-        "fiberContent": "10 grams",
-        "proteinContent": "21 grams",
-        "sugarContent": "3 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Mexican",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/98988/landscape_720/1529342351",
-        "description": "Here's what you need: guajillo chiles, ancho chilies, chiles de árbol, tomato, water, onion, garlic, salt, corn tortilla, canola oil, large egg, queso fresco, red onion, avocado, fresh cilantro",
-        "duration": "PT01M53S",
-        "name": "Chilaquiles With Andrea Mares Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/163764.jpg",
-        "uploadDate": "2018-06-15T23:26:20"
-      }]
+    "cookingMethod": "Deep-Fry",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "730 calories",
+      "carbohydrateContent":  "26 grams",
+      "fatContent":  "68 grams",
+      "fiberContent": "1 grams",
+      "proteinContent": "3 grams",
+      "sugarContent": "14 grams"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Dee Robertson"
-        }
-      ],
-      "datePublished": "2017-04-26T19:47:33",
-      "description": "Here's what you need: steak, salt, pepper, chili powder, dried oregano, garlic powder, cumin, egg, salt, pepper, butter, small flour tortilla, hard taco shell, grated cheddar cheese, salsa, avocado, queso fresco, fresh cilantro, scallion",
-      "image": "https://img.buzzfeed.com/video-api-prod/assets/589c808340604205baec4ebfe20e8536/Thumb2.jpg",
-      "name": "Double-Decker Steak Breakfast Tacos Recipe by Tasty",
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Fusion",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/32093/mp4_720x1280/1495125380",
+      "description": "Here's what you need: all-purpose flour, salt, sugar, zest of 1 lemon, boiling water, butter, vanilla extract, egg, peanut or vegetable oil, cinnamon sugar, strawberry jam, clotted cream, piping bag with star nozzle",
+      "duration": "PT01M12S",
+      "name": "Afternoon Tea Churros Recipe by Tasty",
       "publisher": {
         "@type": "Organization",
         "name": "Tasty",
         "logo": {
           "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+          "url": "https://tasty.co/favicon.ico"
         }
       },
-      "recipeIngredient": [
-            "1 pound steak (flank, skirt, or flat-iron)"
-            ,"1 teaspoon salt"
-            ,"½ teaspoon pepper"
-            ,"½ teaspoon chile powder"
-            ,"½ teaspoon oregano"
-            ,"½ teaspoon garlic powder"
-            ,"½ teaspoon cumin"
-            ,"8 eggs, beaten"
-            ,"Salt, to taste"
-            ,"Pepper, to taste"
-            ,"1 tablespoon butter"
-            ,"8 small flour tortillas"
-            ,"8 hard taco shells"
-            ,"1-2 cups grated cheddar or jack cheese"
-            ,"1 cup salsa"
-            ,"1 avocado, sliced"
-            ,"Crumbled queso fresco"
-            ,"Cilantro"
-            ,"Scallions"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Combine the cumin, chili powder, garlic, oregano, salt, and pepper in a small bowl."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Rub all over the steak."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Heat a large sauté pan over high heat until very hot. Add a splash of vegetable oil."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add the steak to the pan and cook 3-4 minutes per side for medium, or cook to desired doneness."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Remove from pan and let rest at least 10 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Thinly slice against the grain."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Preheat an oven to 350˚F (180˚C)."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Place the flour tortillas on baking sheets. Sprinkle each with a small amount of shredded cheese, then place one hard taco shell inside."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Heat just until cheese melts, about 3-5 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Heat a nonstick pan over medium heat and add butter. Scramble the eggs and season with salt and pepper."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To assemble, fill each double-decker shell with a few spoonfuls of scrambled eggs and a few slices of steak. Top with salsa, avocado, queso fresco, cilantro, and scallions."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "8 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "100",
-        "ratingCount": "3",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Pan Fry",
-      "keywords": "breakfast, eggs, steak, tacos",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "468 calories",
-        "carbohydrateContent":  "32 grams",
-        "fatContent":  "24 grams",
-        "fiberContent": "2 grams",
-        "proteinContent": "27 grams",
-        "sugarContent": "2 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/22023/mp4_720x1280/1485381654",
-        "description": "Here's what you need: steak, salt, pepper, chili powder, dried oregano, garlic powder, cumin, egg, salt, pepper, butter, small flour tortilla, hard taco shell, grated cheddar cheese, salsa, avocado, queso fresco, fresh cilantro, scallion",
-        "duration": "PT01M05S",
-        "name": "Double-Decker Steak Breakfast Tacos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/589c808340604205baec4ebfe20e8536/Thumb2.jpg",
-        "uploadDate": "2017-04-26T19:47:33"
-      }]
+      "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/87951f208ce74724b4d4510d07236676/Video_Thumb.jpg",
+      "uploadDate": "2017-04-26T19:46:13"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Ellie Holland"
+      }
+    ],
+    "datePublished": "2018-04-09T21:50:46",
+    "description": "Here's what you need: butter, brown sugar, water, salt, flour, egg, vanilla extract, rum, mini chocolate chips, oil, granulated sugar, ground cinnamon",
+    "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/42574d30e0ce4e78bef11a5e163401e0/Double_Chocolate_Stuffed_Mini_Churros_FB_FINAL_2.jpg",
+    "name": "Double Chocolate-Stuffed Mini Churros (Mini Churros Rellenos De Chocolate) Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
+    "recipeIngredient": [
+          "125 grams butter, cubed"
+          ,"85 grams sugar"
+          ,"230 milliliters water"
+          ,"1 teaspoon salt"
+          ,"250 grams flour"
+          ,"3 eggs"
+          ,"1 tablespoon vanilla extract"
+          ,"1 tablespoon rum"
+          ,"Mini chocolate chips"
+          ,"½ liter of oil"
+          ,"100 grams sugar"
+          ,"1 tablespoon ground cinnamon"
+    ],
+    "recipeInstructions": [
         {
-          "@type": "Person",
-          "name": "Merle O'Neal"
+          "@type": "HowToStep",
+          "text": "In a saucepan over a medium heat, combine the butter, sugar, water, and salt ,and bring to a boil."
         }
-      ],
-      "datePublished": "2017-06-27T21:56:51",
-      "description": "Here's what you need: tortilla, oil, garlic, tofu, turmeric, paprika, red pepper flakes, nutritional yeast, vegetable stock, hot sauce, onion, fresh spinach, tomato, black beans, bell pepper, mushrooms, plant based meat alternative, pinto bean, potato, sweet potato, corn",
-      "image": "https://img.buzzfeed.com/video-api-prod/assets/a0666771c1c5434bbe270c433ea72045/fb_thumb.jpg",
-      "name": "Freezer-Prep Breakfast Burritos Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+        ,{
+          "@type": "HowToStep",
+          "text": "Reduce the heat to medium-low, and mix in the flour with a wooden spoon until the dough comes together to form a soft ball."
         }
-      },
-      "recipeIngredient": [
-            "Tortillas"
-            ,"1 tablespoon oil"
-            ,"5 cloves garlic, minced"
-            ,"14 ounces tofu, broken up"
-            ,"1 teaspoon turmeric"
-            ,"1 teaspoon paprika"
-            ,"½ teaspoons red pepper flakes"
-            ,"¼ cup nutritional yeast"
-            ,"¼ cup vegetable stock"
-            ,"Hot sauce, optional"
-            ,"Onions, diced and cooked, optional"
-            ,"Spinach, cooked, optional"
-            ,"Tomatoes, sliced and cooked, optional"
-            ,"Black beans, optional"
-            ,"Peppers, chopped and cooked, optional"
-            ,"Mushrooms, chopped and cooked, optional"
-            ,"Plant-based meat alternatives, cooked, optional"
-            ,"Pinto beans, optional"
-            ,"Potatoes, chopped and cooked, optional"
-            ,"Sweet potatoes, chopped and cooked, optional"
-            ,"Corn, optional"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "In a medium pan, add oil and garlic and cook until garlic is lightly browned. Add tofu by pulling pieces off to produce the full “scramble” effect."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add the turmeric, paprika, red pepper flakes, and nutritional yeast and stir to combine."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add the vegetable stock and cook until absorbed in the tofu."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Drizzle with hot sauce if you desire."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Spoon some of the scramble in the center of a tortilla and add any fillings you would like."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "NOTE: Leave plenty of room on the ends otherwise food will spill out once it&#x27;s folded up."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Fold the left and right sides of the tortilla in toward the center, then roll the bottom (the end nearest you) up towards the top."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Dampen a paper towel and wrap it around the burrito, mimicking the fold of the burrito itself. Do the same with parchment paper."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Place your burritos in a plastic bag and freeze until breakfast."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "NOTE: Save for up to 1 month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "When you are ready to eat, take one of the burritos out, remove parchment paper and microwave burrito (still in paper towel) in the microwave for 3 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Allow to cool for 1 minute."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "8 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "96",
-        "ratingCount": "45",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Pan Fry",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "104 calories",
-        "carbohydrateContent":  "10 grams",
-        "fatContent":  "4 grams",
-        "fiberContent": "2 grams",
-        "proteinContent": "7 grams",
-        "sugarContent": "2 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/35009/mp4_720x1280/1498580763",
-        "description": "Here's what you need: tortilla, oil, garlic, tofu, turmeric, paprika, red pepper flakes, nutritional yeast, vegetable stock, hot sauce, onion, fresh spinach, tomato, black beans, bell pepper, mushrooms, plant based meat alternative, pinto bean, potato, sweet potato, corn",
-        "duration": "PT01M40S",
-        "name": "Freezer-Prep Breakfast Burritos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/a0666771c1c5434bbe270c433ea72045/fb_thumb.jpg",
-        "uploadDate": "2017-06-27T21:56:51"
-      }]
+        ,{
+          "@type": "HowToStep",
+          "text": "Take the saucepan off the heat and cool for 5 minutes, to prevent the eggs from curdling."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Gradually mix in the eggs one by one."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Add in the vanilla extract and rum, and mix until creamy."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Spoon the mixture into a piping bag with a star nozzle."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Pipe mini churros onto a baking tray, about the length of your index finger, and top with mini chocolate chips."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Pipe another churro on top, so that no chocolate shows."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Freeze for 20 minutes, until set."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In a large saucepan, heat up the oil until it reaches 375˚F (190˚C)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Fry the churros in the oil for a few minutes, until slightly golden in color."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Transfer to a paper towel-lined plate or a clean kitchen towel to drain."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Combine the remaining sugar with the cinnamon."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Coat each churro in the cinnamon sugar, then serve."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "12 servings",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "84",
+      "ratingCount": "50",
+      "bestRating": "100",
+      "worstRating": "0"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Tucker Iida"
-        }
-      ],
-      "datePublished": "2017-04-26T19:46:16",
-      "description": "Here's what you need: vegetable oil, corn tortillas, black beans, mexican blend cheese, pico de gallo, egg, red enchilada sauce, fresh cilantro, cotija cheese, cream mexicana",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/c5ae61ebfc8b483d8688e23f45bfa1de/BFV5588_HUEVOSRANCHEROS-ISHBAKE_FBEXPORT1080SQ.jpg",
-      "name": "Huevos Rancheros-ish Bake Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
-        }
-      },
-      "recipeIngredient": [
-            "1 cup Vegetable Oil"
-            ,"5 Corn Tortillas (cut 4 of them in half)"
-            ,"14 oz. can Black Beans"
-            ,"1 cup Mexican Blend Cheese"
-            ,"1 1/2 cup Pico de Gallo"
-            ,"6 Eggs"
-            ,"1/2 cup Red Enchilada Sauce"
-            ,"Cilantro"
-            ,"Cotija Cheese"
-            ,"Cream Mexicana or Sour Cream"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Preheat your oven to 375˚F (190˚C)"
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In vegetable oil, lightly fry your corn tortillas. Drain on a paper towel."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In a 9 inch (25cm) cast iron skillet, arrange your lightly fried tortillas so they cover the bottom of the skillet."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add black beans evenly over tortillas. (Some will fall in-between the tortillas, thats ok!)"
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Sprinkle Mexican blend cheese over the black beans."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Add pico de gallo on top of the cheese."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Using the back of a large spoon, create 6 wells in the pico de gallo for the eggs to rest in."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Crack one egg into each well (6 wells for 6 eggs)."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Pour enchilada sauce over everything!"
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Bake for 20-25 minutes. Check on it often to make sure your yolks don’t overcook!"
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Top with your favorite huevos rancheros toppings."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "6 servings",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "96",
-        "ratingCount": "75",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "cookingMethod": "Bake",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "669 calories",
-        "carbohydrateContent":  "26 grams",
-        "fatContent":  "55 grams",
-        "fiberContent": "6 grams",
-        "proteinContent": "19 grams",
-        "sugarContent": "3 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/32074/mp4_720x1280/1495125320",
-        "description": "Here's what you need: vegetable oil, corn tortillas, black beans, mexican blend cheese, pico de gallo, egg, red enchilada sauce, fresh cilantro, cotija cheese, cream mexicana",
-        "duration": "PT00M36S",
-        "name": "Huevos Rancheros-ish Bake Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/c5ae61ebfc8b483d8688e23f45bfa1de/BFV5588_HUEVOSRANCHEROS-ISHBAKE_FBEXPORT1080SQ.jpg",
-        "uploadDate": "2017-04-26T19:46:16"
-      }]
+    "cookingMethod": "Deep-Fry",
+    "keywords": "double chocolate stuffed mini churros",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "547 calories",
+      "carbohydrateContent":  "28 grams",
+      "fatContent":  "46 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "4 grams",
+      "sugarContent": "9 grams"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Claire Nolan"
-        }
-      ],
-      "datePublished": "2017-09-11T23:30:20",
-      "description": "Here's what you need: flour tortilla, hash brown, egg, breakfast sausage, shredded mexican cheese blend",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/901ad632f7964feb97f57e9dbd9a00fd/BFV28863_FreezerPrepBurritos_FB1080SQ.jpg",
-      "name": "Breakfast Burritos Recipe by Tasty",
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Mexican",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/31382/mp4_720x1280/1494535514",
+      "description": "Here's what you need: butter, brown sugar, water, salt, flour, egg, vanilla extract, rum, mini chocolate chips, oil, granulated sugar, ground cinnamon",
+      "duration": "PT01M20S",
+      "name": "Double Chocolate-Stuffed Mini Churros (Mini Churros Rellenos De Chocolate) Recipe by Tasty",
       "publisher": {
         "@type": "Organization",
         "name": "Tasty",
         "logo": {
           "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+          "url": "https://tasty.co/favicon.ico"
         }
       },
-      "recipeIngredient": [
-            "6 flour tortillas"
-            ,"2 cups cooked hash browns"
-            ,"2 cups scrambled eggs"
-            ,"1 pound breakfast sausage, cooked"
-            ,"1 cup shredded Mexican cheese blend"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Assemble the burritos by microwaving the flour tortilla for 20 seconds, and begin to layer burrito starting with hash browns, followed by scrambled eggs, cooked breakfast sausage, and cheese."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Fold in the left and right sides of the tortilla and roll it up from the bottom, tucking the bottom edge under the filling. Wrap in parchment paper and label. Freeze up to 1 month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To reheat from frozen, wrap the burrito in a damp paper towel and microwave for 2-3 minutes, flipping halfway or until the center is hot. Let stand 1 minute before eating."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "6 burritos",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "97",
-        "ratingCount": "78",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "762 calories",
-        "carbohydrateContent":  "43 grams",
-        "fatContent":  "48 grams",
-        "fiberContent": "2 grams",
-        "proteinContent": "35 grams",
-        "sugarContent": "2 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/51861/mp4_720x1280/1505233198",
-        "description": "Here's what you need: flour tortilla, hash brown, egg, breakfast sausage, shredded mexican cheese blend",
-        "duration": "PT02M02S",
-        "name": "Breakfast Burritos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/901ad632f7964feb97f57e9dbd9a00fd/BFV28863_FreezerPrepBurritos_FB1080SQ.jpg",
-        "uploadDate": "2017-09-11T23:30:20"
-      }]
+      "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/42574d30e0ce4e78bef11a5e163401e0/Double_Chocolate_Stuffed_Mini_Churros_FB_FINAL_2.jpg",
+      "uploadDate": "2018-04-09T21:50:46"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tasty"
+      }
+    ],
+    "datePublished": "2017-04-26T19:46:01",
+    "description": "Here's what you need: sugar, passion fruit juice, heavy cream, whole milk, vanilla extract, egg yolk, egg, ramekins",
+    "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/19847.jpg",
+    "name": "Passion Fruit Flan Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
+    "recipeIngredient": [
+          "1 cup sugar"
+          ,"1/3 cup passion fruit juice + 2 Tbsp. passion fruit juice"
+          ,"1 3/4 cups heavy cream"
+          ,"1 cup whole milk"
+          ,"2 tsp vanilla extract"
+          ,"2 egg yolks"
+          ,"3 eggs"
+          ,"8 Ramekins"
+    ],
+    "recipeInstructions": [
         {
-          "@type": "Person",
-          "name": "Pierce Abernathy"
+          "@type": "HowToStep",
+          "text": "Pour a cup of sugar (200g) and ⅓ cups (80ml) of passion fruit juice into a saucepan over a medium heat. Let the sugar melt and form a golden color. Don&#x27;t over stir. Take off the heat."
         }
-      ],
-      "datePublished": "2018-05-16T13:10:06",
-      "description": "Here's what you need: large egg, olive oil, kosher salt, black pepper, small corn tortilla, canned black bean, pico de gallo, fresh cilantro",
-      "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/9a8e91cf3a7e4e4ca99c5d6feccd0501/BFV43066_TastyMakeAheadMealPlan_FB_V2.jpg",
-      "name": "Scrambled Egg Breakfast Tacos Recipe by Tasty",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+        ,{
+          "@type": "HowToStep",
+          "text": "Spoon the caramel into each ramekin, and swirl it around so the bottom is covered. Set aside to cool."
         }
-      },
-      "recipeIngredient": [
-            "2 large eggs"
-            ,"1 teaspoon olive oil"
-            ,"¼ teaspoon kosher salt"
-            ,"⅛ teaspoon black pepper"
-            ,"2 small corn tortillas"
-            ,"2 tablespoons canned black beans, drained and rinsed"
-            ,"¼ cup pico de gallo"
-            ,"2 tablespoons chopped, fresh cilantro"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "Crack the eggs into a small bowl and whisk to combine."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Heat the olive oil in a medium nonstick pan over medium heat until shimmering and add the beaten eggs, salt, and pepper. Using a rubber spatula, stir the eggs often until firm, roughly 3 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Divide the eggs between the tortillas."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Top each taco with pico de gallo, black beans, and cilantro."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "2 tacos",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "96",
-        "ratingCount": "64",
-        "bestRating": "100",
-        "worstRating": "0"
-      },
-      "keywords": ", 7 day meal plan, beans, bread, cheap meal plan, cheap meal prep, cheese, food, healthy meal plan, healthy meal prep, make-ahead meal plan, meal plan, meal prep, pasta, pico, rice, tasty, tasty's 7-day meal plan",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "178 calories",
-        "carbohydrateContent":  "15 grams",
-        "fatContent":  "8 grams",
-        "fiberContent": "2 grams",
-        "proteinContent": "10 grams",
-        "sugarContent": "1 grams"
-      },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "totalTime": "PT30M",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/94370/landscape_720/1526501033",
-        "description": "Here's what you need: large egg, olive oil, kosher salt, black pepper, small corn tortilla, canned black bean, pico de gallo, fresh cilantro",
-        "duration": "PT02M52S",
-        "name": "Scrambled Egg Breakfast Tacos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/9a8e91cf3a7e4e4ca99c5d6feccd0501/BFV43066_TastyMakeAheadMealPlan_FB_V2.jpg",
-        "uploadDate": "2018-05-16T13:10:06"
-      }]
+        ,{
+          "@type": "HowToStep",
+          "text": "In another saucepan, heat heavy cream, whole milk, vanilla extract, and two tablespoons of passion fruit juice. Stir until well mixed and hot."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In a large bowl, mix egg yolks, eggs, and gradually pour in the hot passion fruit cream mixture until fully incorporated. Pour the mixture through a sieve to make the mixture smooth."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Place the ramekins into a large roasting pan. Pour hot water into the pan to come roughly halfway up the sides of the ramekins. Pour the mixture into the ramekins and bake at 350˚F (180˚C) for 45 minutes."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Let the flan cool outside the oven, and then refrigerate it for at least two hours."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "When you&#x27;re ready to serve the flan, run a knife around the edges to loosen, place a dish over the top of the ramekin and quickly invert it."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "8 servings",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "77",
+      "ratingCount": "30",
+      "bestRating": "100",
+      "worstRating": "0"
     },
-  
-    {
-      "@context": "http://schema.org/",
-      "@type": "Recipe",
-      "author": [
-        {
-          "@type": "Person",
-          "name": "Tasty"
-        }
-      ],
-      "datePublished": "2017-04-26T19:46:04",
-      "description": "Here's what you need: bacon, sausage, baby red potato, red bell pepper, yellow onion, salt, pepper, egg, shredded cheese, green onion, flour tortilla, parchment paper",
-      "image": "https://img.buzzfeed.com/video-api-prod/assets/ed6c4dc37dcb482991961425fa5fe142/2.jpg",
-      "name": "Frozen Breakfast Burritos Recipe by Tasty",
+    "cookingMethod": "Bake",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "251 calories",
+      "carbohydrateContent":  "21 grams",
+      "fatContent":  "17 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "6 grams",
+      "sugarContent": "21 grams"
+    },
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Mexican",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/32158/mp4_720x1280/1495125411",
+      "description": "Here's what you need: sugar, passion fruit juice, heavy cream, whole milk, vanilla extract, egg yolk, egg, ramekins",
+      "duration": "PT01M00S",
+      "name": "Passion Fruit Flan Recipe by Tasty",
       "publisher": {
         "@type": "Organization",
         "name": "Tasty",
         "logo": {
           "@type": "ImageObject",
-          "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+          "url": "https://tasty.co/favicon.ico"
         }
       },
-      "recipeIngredient": [
-            "Bacon"
-            ,"Sausage"
-            ,"Baby Red Potatoes /quartered"
-            ,"1 Red Pepper /chopped"
-            ,"1 Yellow Onion /chopped"
-            ,"Salt and Pepper"
-            ,"n/a"
-            ,"10 Eggs - beaten"
-            ,"1 Bag Shredded Cheese"
-            ,"1 Bunch Green Onions /sliced"
-            ,"Flour Tortillas"
-            ,"Parchment Paper"
-      ],
-      "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "text": "In a large skillet over medium heat, cook bacon (in batches if necessary) until crispy. Remove the bacon to a paper towel lined plate - leave to cool."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In the same skillet - using leftover bacon grease (drain some if necessary) add the potatoes and season with salt and pepper. Once lightly browned add in peppers and onion. Cook until potatoes have browned and the peppers and onions have softened. Remove from pan and place in bowl to cool."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "In the same saucepan, cook sausage until browned and cooked through. Remove to a paper towel lined bowl."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Reduce heat to medium/low and pour beaten eggs into the skillet. Fold and stir eggs occasionally until cooked but still soft and moist. Remove from pan."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "While cooked ingredients are cooling slightly, gather flour tortillas, shredded cheese and sliced green onions (optional) and set them out on your table/workspace."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To assemble the burritos, lay out a tortilla and start with a base of eggs followed by desired toppings and finish with cheese."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To wrap, fold in both sides and then fold the bottom up and over all the ingredients. Roll up tightly."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "NOTE: If you find the tortillas are tearing, heat them up - a few at a time - for 20 seconds in the microwave before assembling."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Wrap up in parchment paper. Place the parchment-wrapped burritos in a 1 gallon freezer bag and place in the freezer to store for up to one month."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "To Reheat: Remove the frozen burrito from the freezer. Unwrap from parchment paper and wrap the frozen burrito up in a damp paper towel. Place on a microwave safe plate and microwave for 3 minutes."
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Remove from microwave and rest for one minute before unwrapping. Remove the paper towel, serve with hot sauce, salsa, or sour cream!"
-          }
-          ,{
-            "@type": "HowToStep",
-            "text": "Enjoy!"
-          }
-      ],
-      "recipeYield": "6 burritos",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "98",
-        "ratingCount": "171",
-        "bestRating": "100",
-        "worstRating": "0"
+      "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/19847.jpg",
+      "uploadDate": "2017-04-26T19:46:01"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Rie McClenny"
+      }
+    ],
+    "datePublished": "2018-07-06T21:43:05",
+    "description": "Here's what you need: granny smith apple, lemon water, sugar, cinnamon, unsalted butter, brown sugar, salt, water, all-purpose flour, large egg, oil, sugar, cinnamon, piping bag",
+    "image": "https://img.buzzfeed.com/video-api-prod/assets/156842cc009c486aaba051b222d85c3b/appletotsFB2.jpg",
+    "name": "Apple Tater Tots Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
+    },
+    "recipeIngredient": [
+          "2 granny smith apples"
+          ,"Lemon water (to prevent apples from browning)"
+          ,"2 tablespoons sugar"
+          ,"¼ teaspoon cinnamon"
+          ,"¼ cup (½ stick) unsalted butter"
+          ,"2 tablespoons brown sugar"
+          ,"½ teaspoon salt"
+          ,"1 cup (235 milliliters) water"
+          ,"1 cup (125 grams) all-purpose flour"
+          ,"4 large eggs"
+          ,"Oil, for frying"
+          ,"¼ cup sugar mixed with 1 teaspoon cinnamon, for coating"
+          ,"n/a"
+          ,"1 piping bag with a large star tip or large round tip"
+    ],
+    "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "Peel the apples and soak them in a medium bowl filled with lemon water to keep then from browning. Using a cheese grater, grate the apples."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In another medium bowl, combine the grated apples and sprinkle with sugar and cinnamon. Stir to coat well and set aside."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Make the churro dough: In a medium saucepan over high heat, combine the butter, brown sugar, salt, and water. Bring to a boil."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Reduce the heat to medium-low and add the flour. Using a wooden spoon, stir until the dough comes together to form a ball, about 1 minute."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Remove the pot from the heat and let cool for about 5 minutes to prevent accidentally cooking the eggs."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Add the eggs, 1 at a time, being sure to fully incorporate each egg before adding the next. Set the dough aside."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Spread a kitchen towel over a medium bowl. Transfer the grated apple to the towel and squeeze to remove moisture."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Add the grated apple to the churro dough. Mix well with wooden spoon and transfer to a piping bag with a large star tip or large round tip."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Heat the oil in a large pot until it reaches 350˚F (180˚C)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Pipe the dough into the hot oil, using scissors to cut into bite-size pieces as you squeeze. Work in batches, if necessary, so as not to overcrowd the pot. Fry the churros until golden brown and fully cooked, 2-3 minutes."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Transfer the hot churros to a medium bowl filled with cinnamon sugar and toss to coat."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "6 servings",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "93",
+      "ratingCount": "94",
+      "bestRating": "100",
+      "worstRating": "0"
+    },
+    "cookingMethod": "Deep-Fry",
+    "keywords": "apple, churros, dessert, fried treats, tater tots, unsolved",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "319 calories",
+      "carbohydrateContent":  "31 grams",
+      "fatContent":  "18 grams",
+      "fiberContent": "1 grams",
+      "proteinContent": "7 grams",
+      "sugarContent": "11 grams"
+    },
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Fusion",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/101251/landscape_720/1530921787",
+      "description": "Here's what you need: granny smith apple, lemon water, sugar, cinnamon, unsalted butter, brown sugar, salt, water, all-purpose flour, large egg, oil, sugar, cinnamon, piping bag",
+      "duration": "PT02M00S",
+      "name": "Apple Tater Tots Recipe by Tasty",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tasty",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tasty.co/favicon.ico"
+        }
       },
-      "cookingMethod": "Pan Fry",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "349 calories",
-        "carbohydrateContent":  "24 grams",
-        "fatContent":  "18 grams",
-        "fiberContent": "2 grams",
-        "proteinContent": "21 grams",
-        "sugarContent": "1 grams"
+      "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/156842cc009c486aaba051b222d85c3b/appletotsFB2.jpg",
+      "uploadDate": "2018-07-06T21:43:05"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tasty"
+      }
+    ],
+    "datePublished": "2017-04-26T19:46:38",
+    "description": "Here's what you need: butter, brown sugar, salt, water, flour, vanilla, egg, cooking spray, oil, cinnamon sugar, ice cream, hot fudge, caramel sauce, piping bag, muffin tin",
+    "image": "https://img.buzzfeed.com/video-api-prod/assets/611fa066ddb445b282cbed439031694d/BFV8528_ChurroIceCreamBowl-Thumb1080SQ.jpg",
+    "name": "Churro Ice Cream Bowls Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
+    },
+    "recipeIngredient": [
+          "¼ cup butter, cubed"
+          ,"2 Tbsp. brown sugar"
+          ,"½ tsp salt"
+          ,"1 cup water"
+          ,"1 cup flour"
+          ,"1 tsp vanilla"
+          ,"4 eggs"
+          ,"Cooking-oil spray"
+          ,"Oil for frying"
+          ,"Cinnamon sugar"
+          ,"Ice cream"
+          ,"Hot fudge and caramel topping (optional)"
+          ,"n/a"
+          ,"Piping bag with a small star tip"
+          ,"Muffin tin (6 to 12 cups)"
+    ],
+    "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "In a 1.5-quart saucepan over medium-high heat, add butter, brown sugar, salt, and water, and bring to a boil."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "As soon as the butter has fully melted and the mixture begins to boil, reduce the heat to medium-low and add in flour. Using a wooden spoon, stir until the dough comes together to form a ball (about 1 minute)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Remove from heat and let cool for 5 minutes before proceeding to the next step (to prevent accidentally cooking the eggs)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Mix in the vanilla extract and add in the eggs, one at a time, being sure to fully incorporate each egg before adding the next."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Once all the eggs are incorporated, transfer it to a piping bag with a small star tip."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Invert a muffin tin and spray thoroughly with nonstick cooking spray. Pipe the dough around the inverted cups in spirals to form the bowls. Immediately transfer the tray to the freezer and freeze until solid (about 3 hours or overnight)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Heat oil in a deep pot to 350˚F (175˚C). Remove the muffin tin from the freezer and flex it to release the churro bowls (you may need to also use a butter knife under the bottom edge to initially release them). Return any extras to the freezer while you wait to fry."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Fry them in batches, until nicely browned, no more than 3 minutes at a time. Be sure to carefully turn them so they fry evenly."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Once desired color is reached, remove them from the oil to a paper towel-lined plate. Dab off any excess oil then roll them in cinnamon sugar."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Fill with your favorite ice cream and toppings."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "8 bowls",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "91",
+      "ratingCount": "180",
+      "bestRating": "100",
+      "worstRating": "0"
+    },
+    "cookingMethod": "Deep-Fry",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "211 calories",
+      "carbohydrateContent":  "15 grams",
+      "fatContent":  "13 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "5 grams",
+      "sugarContent": "2 grams"
+    },
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Fusion",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/31948/mp4_720x1280/1495124889",
+      "description": "Here's what you need: butter, brown sugar, salt, water, flour, vanilla, egg, cooking spray, oil, cinnamon sugar, ice cream, hot fudge, caramel sauce, piping bag, muffin tin",
+      "duration": "PT01M16S",
+      "name": "Churro Ice Cream Bowls Recipe by Tasty",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tasty",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tasty.co/favicon.ico"
+        }
       },
-      "recipeCategory": "Breakfast",
-      "recipeCuisine": "Fusion",
-      "video": [{
-        "contentUrl": "https://vid.tasty.co/output/32140/mp4_720x1280/1495125400",
-        "description": "Here's what you need: bacon, sausage, baby red potato, red bell pepper, yellow onion, salt, pepper, egg, shredded cheese, green onion, flour tortilla, parchment paper",
-        "duration": "PT01M11S",
-        "name": "Frozen Breakfast Burritos Recipe by Tasty",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Tasty",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://tasty.co/favicon.ico"
-          }
-        },
-        "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/ed6c4dc37dcb482991961425fa5fe142/2.jpg",
-        "uploadDate": "2017-04-26T19:46:04"
-      }]
-    }
-  ]
-  
-  
-  
+      "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/611fa066ddb445b282cbed439031694d/BFV8528_ChurroIceCreamBowl-Thumb1080SQ.jpg",
+      "uploadDate": "2017-04-26T19:46:38"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Tasty"
+      }
+    ],
+    "datePublished": "2017-04-26T19:46:45",
+    "description": "Here's what you need: water, granulated sugar, unsalted butter, all-purpose flour, red velvet cake mix, egg, canola oil, sugar, ground cinnamon, cream cheese, confectioners sugar, vanilla extract",
+    "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d5b4487b069441bf82d24ed4f7667423/BFV8024_Red_Velvet_Churros-FB1080.jpg",
+    "name": "Red Velvet Churros Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
+    },
+    "recipeIngredient": [
+          "2 cups water"
+          ,"¼ cup granulated sugar"
+          ,"4 Tbsp. unsalted butter"
+          ,"1 cup all-purpose flour"
+          ,"1 cup red velvet cake mix"
+          ,"2 eggs"
+          ,"Canola oil, for frying"
+          ,"½ cup sugar"
+          ,"1 tsp ground cinnamon"
+          ,"8 oz cream cheese, softened"
+          ,"½ cup confectioners&#x27; sugar"
+          ,"1 tsp vanilla extract"
+    ],
+    "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "In a pot over medium-high heat, bring water, sugar, and butter to a boil."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Add in the flour and the cake mix and stir vigorously until mixture has no streaks."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Remove from heat and add the eggs, stirring until the dough becomes a ball. Transfer dough to a piping bag with a size 9 star tip."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Pipe 3 to 4 inches (7-10cm) strips of the dough on a baking sheet. Freeze for 30 minutes."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Heat the canola oil in a pot over medium-high heat. Fry the red velvet churros for about three to four minutes."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Remove from oil and drain on paper towels."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Using a straw, poke a hole through the centers of the churros to hollow out a cavity for the filling."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "On a plate, combine the cinnamon and the sugar and mix until it is a uniform color."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Roll the hollowed out churros in the cinnamon sugar."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In a medium bowl, combine the cream cheese, confectioners&#x27; sugar, and vanilla, stirring until smooth."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Transfer filling into a piping bag with a round tip."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Pipe the filling into the churros and serve."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "12 churros",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "81",
+      "ratingCount": "61",
+      "bestRating": "100",
+      "worstRating": "0"
+    },
+    "cookingMethod": "Deep-Fry",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "294 calories",
+      "carbohydrateContent":  "36 grams",
+      "fatContent":  "15 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "4 grams",
+      "sugarContent": "21 grams"
+    },
+    "recipeCategory": "Snacks",
+    "recipeCuisine": "Fusion",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/31916/mp4_720x1280/1495124875",
+      "description": "Here's what you need: water, granulated sugar, unsalted butter, all-purpose flour, red velvet cake mix, egg, canola oil, sugar, ground cinnamon, cream cheese, confectioners sugar, vanilla extract",
+      "duration": "PT01M00S",
+      "name": "Red Velvet Churros Recipe by Tasty",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tasty",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tasty.co/favicon.ico"
+        }
+      },
+      "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d5b4487b069441bf82d24ed4f7667423/BFV8024_Red_Velvet_Churros-FB1080.jpg",
+      "uploadDate": "2017-04-26T19:46:45"
+    }]
+  },
+
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Hector Gomez"
+      }
+    ],
+    "datePublished": "2017-04-26T19:47:09",
+    "description": "Here's what you need: sugar, cinnamon, butter, 10-inch flour tortillas, heavy cream, vanilla extract, sugar, fresh fruit",
+    "image": "https://img.buzzfeed.com/video-api-prod/assets/b2423c62a5914e509d2c3d37c681bb22/FB_thumb_A.jpg",
+    "name": "Tortilla Dessert Cups Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tasty",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      }
+    },
+    "recipeIngredient": [
+          "¼ cup sugar"
+          ,"1 tablespoon cinnamon"
+          ,"2 tablespoons butter, melted"
+          ,"3 10-inch flour tortillas"
+          ,"1 cup heavy whipping cream"
+          ,"1 teaspoon vanilla extract"
+          ,"2 tablespoons sugar"
+          ,"Fresh fruit"
+    ],
+    "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "Preheat the oven to 375˚F (190˚C)."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In a small bowl, combine the sugar and cinnamon. Butter each side of the tortillas, sprinkle with cinnamon sugar, and cut into even quarters, making 12 pieces. Place 2 pieces in 6 cups of a muffin tin and push down so that they create a cup shape. Bake for 13-15 minutes, or until crisp. Remove the cups from the oven and allow to cool in the tin."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "In a large bowl, beat together heavy cream, vanilla extract, and sugar with an electric hand mixer until stiff peaks form."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Assemble the cups by placing a spoonful of whipped cream in each toasted cup. Top the whipped cream with fresh fruit of your choice."
+        }
+        ,{
+          "@type": "HowToStep",
+          "text": "Enjoy!"
+        }
+    ],
+    "recipeYield": "6 servings",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "94",
+      "ratingCount": "50",
+      "bestRating": "100",
+      "worstRating": "0"
+    },
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "271 calories",
+      "carbohydrateContent":  "19 grams",
+      "fatContent":  "23 grams",
+      "fiberContent": "0 grams",
+      "proteinContent": "2 grams",
+      "sugarContent": "7 grams"
+    },
+    "recipeCategory": "Desserts",
+    "recipeCuisine": "Mexican",
+    "video": [{
+      "contentUrl": "https://vid.tasty.co/output/17175/mp4_720x1280/1481236797",
+      "description": "Here's what you need: sugar, cinnamon, butter, 10-inch flour tortillas, heavy cream, vanilla extract, sugar, fresh fruit",
+      "duration": "PT00M00S",
+      "name": "Tortilla Dessert Cups Recipe by Tasty",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tasty",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tasty.co/favicon.ico"
+        }
+      },
+      "thumbnailUrl": "https://img.buzzfeed.com/video-api-prod/assets/b2423c62a5914e509d2c3d37c681bb22/FB_thumb_A.jpg",
+      "uploadDate": "2017-04-26T19:47:09"
+    }]
+  }
+]
+
+
+
+
+
 
 
   let recipes = [];
 
 
 function printRecipe(array){
+  array.forEach(eachObject =>{
     let theRecipe = {};
-    array.forEach(eachObject =>{
 
         if(eachObject.name){
         // console.log("Name: ", eachObject.name);
@@ -1395,7 +962,7 @@ function printRecipe(array){
 
         if(eachObject.recipeCategory){
         // console.log("Recipe Category: ", eachObject.recipeCategory);
-        theRecipe.meal = eachObject.recipeCategory;
+        theRecipe.meal = "Dessert";
         // console.log(theRecipe);
         }
 
@@ -1416,12 +983,13 @@ function printRecipe(array){
         // console.log(theRecipe);
         recipes.push(theRecipe);
         
+        
     })
-    // console.log(recipes[0]);
+    console.log(recipes);
   }
   
   
-  printRecipe(mexicanbreakfast);
+  printRecipe(mexicandessert);
   
   // console.log('--------------------------------------------------------',recipes);
 
