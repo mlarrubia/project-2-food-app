@@ -10,70 +10,40 @@ body {
 // #00B7FF
 
 nav{
-  z-index: 10;
-  position: fixed;
-  top:0;
-  width: 100%;
-  height: 50px;
-  // margin: 2px 5px 0px 5px;
-  background-color: #00B7FF;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+ background-color: #00B7FF;
+ border-radius: 12px 12px 0 0;
 
 }
 
-.navbar{
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  align-self: flex-start;
-  justify-content: space-around;
-  align-items: center;
- 
+nav a{
+  color: white;
+  font-size: 1.4em;
 }
 
-a {
-  color: #ffffff;
+nav a:hover{
   text-decoration: none;
 }
+
+nav img{
+  width: 80px;
+  margin: 0 20px 0 30px;
+}
+
+
 
 a.waves-effect {
   color: blue;
 }
 
-nav a{
-  font-size: 1.7em;
-}
 
-nav img{
-  width: 100px;
-  border-radius: 12px;
-  margin-right: 10px;
-}
 
-nav input{
-  border-radius: 20px;
-  padding: 6px;
-}
 
 nav a[type="submit"] {
-  margin-top: 10px;
-  margin-left: -60px;
-  height: 20px;
-  width: 50px;
+  background-color: none;
+  margin-left: -50px;
 }
 
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B7FF;
-  background: #00B7FF;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
+
 
 // Removes the weird button highlight on click. Need to fix for a seamless transition.
 .btn:focus {
@@ -89,18 +59,18 @@ nav a[type="submit"] {
 
 // Find a way to make the placeholder
 ::placeholder{
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .searchTerm {
   width: 80%;
   border: 3px solid #00B7FF;
-  border-right: none;
-  padding: 12px;
-  height: 20px;
+  // border-right: none;
+  padding: 12px 12px 12px 20px; 
+  height: 50px;
   border-radius: 26px ;
-  outline: none;
-  color: #9DBFAF;
+  // outline: none;
+  // color: #9DBFAF;
   font-size: 22px;
   padding-left: 30px;
 }
@@ -110,16 +80,19 @@ nav a[type="submit"] {
 }
 
 .searchButton {
+  
+}
+
+.searchButton {
   width: 40px;
-  height: 44px;
-  border: 3px solid #ffffff;
-  background: #fff;
+  height: 50px;
+  border: 1px solid #00B7FF;
+  background: #00B7FF;
   text-align: center;
-  color: #000;
-  border-radius: 0 13px 13px 0;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
-  margin-top: 3px;
 }
 
 
@@ -324,24 +297,42 @@ h1{
 
   // --------------------   Footer   -------------------------------
   
+
+  .bodygap{
+    min-height: 100vh;
+  }
+
   footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    height: 120px;
     background-color: black;
     letter-spacing: 2px;
     color: white;
     padding: 12px;
+
     display: flex;
-    justify-content: center;
-    margin: 2px 8px 0px 5px;
-    margin-right: 5px;
+    justify-content: flex-start;
+    flex-direction: row;
   
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     margin-bottom: 5px;
   
+  }
+
+  footer img{
+    width: 300px;
+  }
+
+  .footer-img{
+    display: flex;
+    justify-items: center;
+  }
+
+
+  .footer-love{
+    display: flex;
+    justify-content: flex-end
   }
 
 
@@ -354,9 +345,7 @@ h1{
     width: 90vw;
     display: flex;
     margin: 100px auto 0 auto;
-    background: url("/images/cutboardfianl.jpg") no-repeat center center fixed; 
     background-repeat: no-repeat;
-    position: fixed;
 
   }
 
@@ -443,6 +432,8 @@ h1{
 .worldmap{
   display: flex;
   justify-content: center;
+  // background-color: bisque;
+  margin: 0 5%;
 }
 
 html, body {
@@ -548,6 +539,17 @@ $primary: #00acc1;
   text-transform: uppercase;
   border: none;
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
