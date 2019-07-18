@@ -59,10 +59,10 @@ router.post('/new', (req, res, next) => {
 
 router.get('/categories/:cuisine',async (req, res, next) => {
   try {
-    const bRecipes = await Recipe.find({meal: "breakfast"});
-    const lRecipes = await Recipe.find({meal: "lunch"});
-    const dRecipes = await Recipe.find({meal: "dinner"});
-    const desRecipes = await Recipe.find({meal: "dessert"});
+    const bRecipes = await Recipe.find({cuisineType: req.params.cuisine, meal: "breakfast"});
+    const lRecipes = await Recipe.find({cuisineType: req.params.cuisine, meal: "lunch"});
+    const dRecipes = await Recipe.find({cuisineType: req.params.cuisine, meal: "Dinner"});
+    const desRecipes = await Recipe.find({cuisineType: req.params.cuisine, meal: "dessert"});
     console.log(lRecipes);
     res.render('recipe-views/category', {breakfast: bRecipes, lunch: lRecipes, dinner: dRecipes, dessert: desRecipes});
   } catch (error) {
