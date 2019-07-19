@@ -20,9 +20,11 @@
       </div>
       {{#if recipeForCard.owner}}
       <div class="update-delete">
-        <button class="recipe-card-update">Update</button>
+        <form action="/recipe/update/{{recipeForCard._id}}" method="POST">
+          <button class="recipe-card-update">Update</button>
+        </form>
         <form action="/recipe/delete/{{recipeForCard._id}}" method="POST">
-        <button class="recipe-card-delete">Delete</button>
+          <button class="recipe-card-delete">Delete</button>
         </form>
       </div>
       {{/if}}
@@ -77,25 +79,3 @@
   </div>
 </div>
 </div>
-
-
-
-
-
-
-
-{{!-- 
-
-
-<div class="recipe-ingredient-card">
-  <h2>Ingredients</h2>
-  
-  <h2>Steps</h2>
-   --}}
-{{!-- Need to happen only if recipe has userID --}}
-{{!-- {{#if recipeForCard.owner}} --}}
-
-
-
-
-{{!-- {{/if}} --}}

@@ -1,0 +1,29 @@
+<div class="create-form-background">
+
+  <div id="create-recipe-body">
+      {{!-- <img src="/images/cuttingboard-edit.jpg" alt=""> --}}
+    <div id="create-recipe-form">
+
+      <form action="/recipe/update/{{recipeForCard._id}}" method="POST" enctype="multipart/form-data">
+        <div id="create-recipe-input-form">
+          <h2>Create Recipe</h2>
+          <input type="text" name="meal" value="{{recipeForCard.meal}}" class="btn">
+          <input type="text" name="cuisineType" value="{{recipeForCard.cuisine}}" class="btn">
+          <input type="text" name="name" value="{{recipeForCard.name}}" class="btn">
+          <input type="text" name="ingredients" value="{{recipeForCard.ingredients}}" class="btn">
+          <input type="text" name="steps" value="{{recipeForCard.steps}}" class="btn">
+          <input type="text" name="video" value="{{recipeForCard.video}}" class="btn">
+          <input type="file" name="image" value="{{recipeForCard.image}}" class="btn">
+          
+          {{#if message}}
+          <div class="error-message">{{ message }}</div>
+          {{/if}}
+          <br><br>
+
+          <button>Upate Recipe</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

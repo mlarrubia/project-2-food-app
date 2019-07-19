@@ -240,6 +240,13 @@ footer .divider {
   align-items: flex-end;
   background-repeat: no-repeat; }
 
+.recipe-form-bg {
+  background-color: #eee;
+  opacity: .4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
 #create-recipe-form {
   display: flex;
   justify-content: flex-start;
@@ -249,9 +256,6 @@ footer .divider {
   background-image: url(../images/cuttingboard-bg.jpg);
   background-size: 100% 100%;
   background-color: rgba(1, 1, 1, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   padding: 80px;
   border-radius: 22px; }
 

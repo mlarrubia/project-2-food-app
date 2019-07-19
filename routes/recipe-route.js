@@ -96,6 +96,53 @@ router.get('/categories/:cuisine',async (req, res, next) => {
 
 
 
+  // -------------------   Update Recipe   ----------------------------------
+
+  router.get("/update/:id", (req, res, next) =>{
+    Recipe.findById(req.params.id)
+    .then((oneSingleRecipe) =>{
+      res.render('recipe-views/update-recipe', {recipeForCard: oneSingleRecipe});
+    })
+  })
+
+
+  
+router.post('/update/:id', uploadMagic.single("image"), (req, res, next) => {
+  console.log("-------------------------------INSIDE THE POST ")
+  console.log("--------------------------", req.file);
+  const theMeal = req.body.meal;
+  const theCuisineType = req.body.cuisineType;
+  const theName = req.body.name;
+  const theIngredients = req.body.ingredients;
+  const theSteps = req.body.steps;
+  const theVideo = req.body.video;
+  if(req.file){
+    const theImage = req.file.url;
+  }
+
+  Recipe.findByIdAndUpdate(req.params.id,{
+    meal: theMeal,
+    cuisineType: theCuisineType,
+    name: theName,
+    ingredients: theIngredients,
+    steps: theSteps,
+    video: theVideo,
+    if(theImage){
+      image: theImage
+    }
+
+  })
+    .then((newRecipe) => {
+      console.log('yay', newRecipe);
+      res.redirect('/user/cookbook')
+    })
+    .catch((err) => {
+      next(err);
+    })
+})
+
+
+
   // ---------------------   Delete Recipe   -----------------------------------
 
   router.post('/delete/:id', (req, res, next)=>{
