@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const recipeSchema = new Schema({
-  meal: {type: String, enum: ["Breakfast", "Lunch", "Dinner", "Desserts", "breakfast", "lunch", "dinner", "desserts"]},
+  meal: {type: String},
   cuisine: {type: String},
   name: {type: String},
   ingredients: [{type: String}],
