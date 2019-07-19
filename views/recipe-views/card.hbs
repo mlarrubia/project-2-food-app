@@ -18,6 +18,14 @@
           </div>
         </div>
       </div>
+      {{#if recipeForCard.owner}}
+      <div class="update-delete">
+        <button class="recipe-card-update">Update</button>
+        <form action="/recipe/delete/{{recipeForCard._id}}" method="POST">
+        <button class="recipe-card-delete">Delete</button>
+        </form>
+      </div>
+      {{/if}}
     </div>
     <div class="right-upper">
       <div class="recipe-video-card">
@@ -28,8 +36,9 @@
   </div>
   <div class="middle-card">
     <div class="recipe-card-description">
-        <iframe width="300" height="500" src="{{recipeForCard.video}}" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {{!-- <iframe width="300" height="500" src="{{recipeForCard.video}}" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
+      <video class="recipe-card-video" src="{{recipeForCard.video}}" controls width="400px;" height="400px;"></video>
       {{recipeForCard.videoDescription}}
     </div>
   </div>
@@ -38,7 +47,7 @@
       <div class="ingredients-header">
         <h1>Ingredients</h1>
       </div>
-      <div class="ingredientws-content">
+      <div class="ingredients-content">
         <ul>
           {{#each recipeForCard}}
           {{#each this.ingredients}}
@@ -90,11 +99,3 @@
 
 
 {{!-- {{/if}} --}}
-
-
-{{!-- 
-  <div id="deleteRecipe">
-    <form action="/recipe/delete/{{recipeForCard._id}}" method="POST">
-      <button class="btn">Delete This Book </button>
-    </form>
-  </div> --}}

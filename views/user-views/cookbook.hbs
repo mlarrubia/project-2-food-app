@@ -1,7 +1,7 @@
 {{!-- Might change the name and or location of it in the views folder --}}
 
 
-<h1>Mexican</h1>
+<h1>My Cookbook</h1>
 
     <div class="pimg1">
         <div class="ptext">
@@ -15,7 +15,7 @@
                 {{#each breakfast}}
         <div class="tile">
             <a href="#" data-toggle="modal" data-target="#modal{{this._id}}"><img class="recipeImg"
-                    src="{{this.images.[0]}}" alt="Not found"> </a>
+                    src="{{this.image}}" alt="Not found"> </a>
         </div>
 
         <!-- Modal -->
@@ -29,7 +29,7 @@
                         <div class="modal-recipe">
 
                             <div class="modal-img">
-                                <a href="/recipe/card/{{this._id}}"><img src="{{this.images.[0]}}"
+                                <a href="/recipe/card/{{this._id}}"><img src="{{this.image}}"
                                         alt="Model not working"></a>
 
                             </div>
@@ -85,7 +85,7 @@
                 {{#each lunch}}
         <div class="tile">
             <a href="#" data-toggle="modal" data-target="#modal{{this._id}}"><img class="recipeImg"
-                    src="{{this.images.[0]}}" alt="Not found"> </a>
+                    src="{{this.image}}" alt="Not found"> </a>
         </div>
 
         <!-- Modal -->
@@ -99,7 +99,7 @@
                         <div class="modal-recipe">
 
                             <div class="modal-img">
-                                <a href="/recipe/card/{{this._id}}"><img src="{{this.images.[0]}}"
+                                <a href="/recipe/card/{{this._id}}"><img src="{{this.image}}"
                                         alt="Model not working"></a>
 
                             </div>
@@ -152,7 +152,7 @@
                 {{#each dinner}}
         <div class="tile">
             <a href="#" data-toggle="modal" data-target="#modal{{this._id}}"><img class="recipeImg"
-                    src="{{this.images.[0]}}" alt="Not found"> </a>
+                    src="{{this.image}}" alt="Not found"> </a>
         </div>
 
         <!-- Modal -->
@@ -166,7 +166,7 @@
                         <div class="modal-recipe">
 
                             <div class="modal-img">
-                                <a href="/recipe/card/{{this._id}}"><img src="{{this.images.[0]}}"
+                                <a href="/recipe/card/{{this._id}}"><img src="{{this.image}}"
                                         alt="Model not working"></a>
 
                             </div>
@@ -219,7 +219,7 @@
                 {{#each dessert}}
         <div class="tile">
             <a href="#" data-toggle="modal" data-target="#modal{{this._id}}"><img class="recipeImg"
-                    src="{{this.images.[0]}}" alt="Not found"> </a>
+                    src="{{this.image}}" alt="Not found"> </a>
         </div>
 
         <!-- Modal -->
@@ -233,7 +233,7 @@
                         <div class="modal-recipe">
 
                             <div class="modal-img">
-                                <a href="/recipe/card/{{this._id}}"><img src="{{this.images.[0]}}"
+                                <a href="/recipe/card/{{this._id}}"><img src="{{this.image}}"
                                         alt="Model not working"></a>
 
                             </div>

@@ -47,10 +47,10 @@ router.post('/profile', (req, res, next) => {
 // Only if the user is login 
 router.get('/cookbook', async (req, res, next) => {
   try {
-    const bRecipes = await Recipe.find({ author: req.user._id, meal: "breakfast" });
-    const lRecipes = await Recipe.find({ author: req.user._id, meal: "lunch" });
-    const dRecipes = await Recipe.find({ author: req.user._id, meal: "dinner" });
-    const desRecipes = await Recipe.find({ author: req.user._id, meal: "dessert" });
+    const bRecipes = await Recipe.find({ author: req.user._id, meal: "Breakfast" });
+    const lRecipes = await Recipe.find({ author: req.user._id, meal: "Lunch" });
+    const dRecipes = await Recipe.find({ author: req.user._id, meal: "Dinner" });
+    const desRecipes = await Recipe.find({ author: req.user._id, meal: "Dessert" });
     console.log(lRecipes);
     res.render('user-views/cookbook', { breakfast: bRecipes, lunch: lRecipes, dinner: dRecipes, dessert: desRecipes });
   } catch (error) {

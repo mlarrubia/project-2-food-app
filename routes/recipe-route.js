@@ -61,13 +61,13 @@ router.post('/new', uploadMagic.single("image"), (req, res, next) => {
 
 router.get('/categories/:cuisine',async (req, res, next) => {
   try {
-    const test = await Recipe.find();
+    // const test = await Recipe.find();
     const bRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Breakfast"});
     const lRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Lunch"});
     const dRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Dinner"});
     const desRecipes = await Recipe.find({cuisine: req.params.cuisine, meal: "Dessert"});
-    console.log(test);
-    console.log(bRecipes);
+    // console.log('===============================',test);
+    console.log('-------------==============----------------========',bRecipes);
     res.render('recipe-views/category', {breakfast: bRecipes, lunch: lRecipes, dinner: dRecipes, dessert: desRecipes});
   } catch (error) {
       next(error);   
@@ -82,7 +82,7 @@ router.get('/categories/:cuisine',async (req, res, next) => {
     let theID = req.params.id;
     Recipe.findById(theID)
     .then((oneSingleRecipe)=>{
-      if(req.user && oneSingleRecipe.author.toString() === req.user._id.toString()){
+      if(req.user && oneSingleRecipe.author && oneSingleRecipe.author.toString() === req.user._id.toString()){
         oneSingleRecipe.owner = true;
       }
       oneSingleRecipe.ingredientsLength = oneSingleRecipe.ingredients.length;

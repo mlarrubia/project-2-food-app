@@ -101,6 +101,7 @@ nav a[type="submit"] {
 
 h1{
   margin-top: 25px;
+  margin-top: 25px;
 }
 #homepage{
   // background-image: url(/images/login-bg.jpg);
@@ -158,6 +159,14 @@ h1{
 
 
 
+.aboutme{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
 
 
 // -------------------   Home page Parallax    ------------------------
@@ -169,25 +178,40 @@ h1{
 // -------------------   User-views - login   ---------------------------
 
 .loginpage{
-  margin-top: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  // background-color: blue;
+  background-image: url('/images/login.jpg');
+  background-size: cover;
+  width: 100vw;
   height: 100vh;
-  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-picture img{
+  height: 150px;
 }
 
 .login-form{
+  height: 250px;
+  width: 500px;
+  background-color: #90949D;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-right: 200px;
+  margin-top: 100px;
 
 }
 
 .login-picture{
-  background-image: url('/images/image3.jpg');
-  background-size: cover;
-  height: 700px;
-  width: 900px;
-  background-color: red;
+ position: relative;
+ left: 350px;
+ top: -95px;
+ z-index: 2;
+ background-color: black;
+ border-radius: 50%;
 }
 
 
@@ -218,7 +242,7 @@ h1{
   display: flex;
   flex-direction: column;
   // justify-content: center;
-  align-items: center;
+  // align-items: center;
   background-color: white;
   height: 50vh;
   width: 30vw;
@@ -299,7 +323,7 @@ h1{
   
 
   .bodygap{
-    min-height: 100vh;
+    // min-height: 100vh;
   }
 
   footer{
@@ -310,9 +334,7 @@ h1{
     color: white;
     padding: 12px;
 
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    
   
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -330,36 +352,69 @@ h1{
   }
 
 
-  .footer-love{
+  footer .footer-love{
     display: flex;
-    justify-content: flex-end
+    justify-content: center;
+    margin-top: -50px;
+    font-size: 21px;
   }
 
 
+  .fa-instagram, .fa-linkedin, .fa-github, .fa-twitter, .fa-facebook{
+    width: 30px;
+    margin: 4px 0 4px 10px;
+    color: #00B7FF
+  }
+
+  a .fa-instagram, a .fa-linkedin, a .fa-github, a .fa-twitter, a .fa-facebook{
+    text-decoration: none;
+  }
+  a > .fa-github{
+    text-decoration: transparent;
+
+  }
+
+  footer .divider{
+    height: 100px;
+    width: 7px;
+  }
+
+  .footer-fa{
+    display: flex;
+    flex-direction: column;
+  }
 
 
   //  -----------------  Create Recipe   ------------------------------------
 
-  #create-recipe-body{
-    height: 80vh;
-    width: 90vw;
-    display: flex;
-    margin: 100px auto 0 auto;
-    background-repeat: no-repeat;
+  
 
+
+  #create-recipe-body{
+    background-image: url(../images/cuttingboard-edit.jpg);
+   background-size: 100% 100%;
+    // height: 80vh;
+    // width: 90vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    
+    
   }
 
 
   #create-recipe-form{
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: flex-start;
     margin: 175px;
   }
 
   #create-recipe-input-form{
-    background-color: bisque;
-    opacity: .4;
+    background-image: url(../images/cuttingboard-bg.jpg);
+    background-size: 100% 100%;
+    background-color: rgba(1,1,1,0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -367,6 +422,12 @@ h1{
     border-radius: 22px;
   }
 
+  .create-form-background{
+    background-image: url(../images/cutboardfianl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+  }
 
 
 
@@ -416,6 +477,20 @@ h1{
     margin-right: 31px;
   }
 
+  .update-delete{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+  }
+
+  .recipe-card-update{
+      margin-right: 20px;
+  }
+  
+  .recipe-card-delete{
+
+  }
+
 
 // -------------------------------
   .right-upper{
@@ -440,6 +515,13 @@ h1{
   .middle-card{
     height: 400px;
     background-color: pink;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+  }
+
+  .recipe-card-video {
+   
   }
 
 
@@ -518,6 +600,8 @@ h1{
   justify-content: center;
   // background-color: bisque;
   margin: 0 5%;
+  border-radius: 50%;
+  // box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
 }
 
 html, body {
