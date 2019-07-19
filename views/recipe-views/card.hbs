@@ -1,40 +1,100 @@
-<div>
-
-  <h1>{{recipeForCard.cuisineType}}</h1>
-  <div class="recipeCard">
-    <div class="recipe-video-card">
-      <iframe width="560" height="315" src="{{recipeForCard.video}}" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="recipe-card">
+  <div class="upper-card">
+    <div class="left-upper">
+      <div class="recipe-card-title">
+        <h1>{{recipeForCard.name}}</h1>
+        <div class="recipe-card-data">
+          <div class="recipe-card-ingredient">
+            {{recipeForCard.ingredientsLength}}
+            <h3>Ingredients</h3>
+          </div>
+          <div class="recipe-card-score">
+            {{recipeForCard.score}}%
+            <h3>Score</h3>
+          </div>
+          <div class="recipe-card-calories">
+            {{recipeForCard.calories}}
+            <h3>calories</h3>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="recipe-ingredient-card">
-      <h2>Ingredients</h2>
-      <ul>
-        {{#each recipeForCard}}
-        {{#each this.ingredients}}
+    <div class="right-upper">
+      <div class="recipe-video-card">
+        <img src="{{recipeForCard.image}}" alt="">
+      </div>
 
-        <li>{{this}}</li>
-
-        {{/each}}
-        {{/each}}
-      </ul>
-    </div>
-    <div class="recipe-steps-card">
-      <h2>Steps</h2>
-      <ol>
-        {{#each recipeForCard}}
-        {{#each this.steps}}
-        <li>{{this}}</li>
-        {{/each}}
-        {{/each}}
-      </ol>
     </div>
   </div>
-  {{!-- Need to happen only if recipe has userID --}}
+  <div class="middle-card">
+    <div class="recipe-card-description">
+        <iframe width="300" height="500" src="{{recipeForCard.video}}" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {{recipeForCard.videoDescription}}
+    </div>
+  </div>
+  <div class="bottom-card">
+    <div class="recipe-card-ingredients">
+      <div class="ingredients-header">
+        <h1>Ingredients</h1>
+      </div>
+      <div class="ingredientws-content">
+        <ul>
+          {{#each recipeForCard}}
+          {{#each this.ingredients}}
+
+          <li>{{this}}</li>
+
+          {{/each}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="recipe-card-steps">
+      <div class="steps-header">
+        <h1>Steps</h1>
+      </div>
+      <div class="steps-content">
+        <ol>
+          {{#each recipeForCard}}
+          {{#each this.steps}}
+          <li>{{this}}</li>
+          {{/each}}
+          {{/each}}
+        </ol>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+{{!-- 
+
+
+<div class="recipe-ingredient-card">
+  <h2>Ingredients</h2>
+  
+  <h2>Steps</h2>
+   --}}
+{{!-- Need to happen only if recipe has userID --}}
+{{!-- {{#if recipeForCard.owner}} --}}
+
+
+
+
+{{!-- {{/if}} --}}
+
+
+{{!-- 
   <div id="deleteRecipe">
     <form action="/recipe/delete/{{recipeForCard._id}}" method="POST">
       <button class="btn">Delete This Book </button>
     </form>
-  </div>
-
-
-</div>
+  </div> --}}

@@ -222,6 +222,61 @@ footer img {
   flex-direction: row;
   justify-content: space-evenly; }
 
+.upper-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px; }
+
+.left-upper {
+  height: 400px;
+  width: 600px; }
+
+.recipe-card-title {
+  display: flex;
+  flex-direction: column; }
+
+.left-upper h1 {
+  text-align: left;
+  margin-bottom: 40px; }
+
+.recipe-card-data {
+  font-size: 36px;
+  display: flex; }
+
+.recipe-card-ingredient, .recipe-card-score, .recipe-card-calories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px;
+  margin-right: 31px; }
+
+.right-upper {
+  height: 400px;
+  width: 400px;
+  background-color: palegoldenrod; }
+
+.recipe-video-card img {
+  width: 400px; }
+
+.middle-card {
+  height: 400px;
+  background-color: pink; }
+
+.bottom-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  line-height: 51px; }
+
+.recipe-card-ingredients {
+  height: 400px;
+  width: 600px; }
+
+.recipe-card-steps {
+  height: 400px;
+  width: 600px; }
+
 .modal-recipe {
   display: flex;
   flex-direction: row;

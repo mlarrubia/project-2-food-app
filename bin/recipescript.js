@@ -1287,6 +1287,16 @@ function printRecipe(array) {
         theRecipe.cuisine = "chinese";
       }
 
+      if (eachObject.nutrition) {
+        // console.log("Recipe Cuisine: ", eachObject.recipeCuisine);
+        theRecipe.calories = Number(eachObject.nutrition.calories.split(' ')[0]);
+      }
+
+      if (eachObject.aggregateRating) {
+        // console.log("Recipe Cuisine: ", eachObject.recipeCuisine);
+        theRecipe.score = eachObject.aggregateRating.ratingValue;
+      }
+
       if (eachObject.video) {
         // console.log("Video: ", eachObject.video[0].contentUrl);
         theRecipe.video = eachObject.video[0].contentUrl

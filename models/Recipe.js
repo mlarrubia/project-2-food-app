@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const recipeSchema = new Schema({
-  meal: {type: String, enum: ["Breakfast", "Lunch", "Dinner", "Dessert", "breakfast", "lunch", "dinner", "dessert"]},
+  meal: {type: String, enum: ["Breakfast", "Lunch", "Dinner", "Desert", "breakfast", "lunch", "dinner", "dessert"]},
   cuisine: {type: String},
   name: {type: String},
   ingredients: [{type: String}],
@@ -11,6 +11,8 @@ const recipeSchema = new Schema({
   video: {type: String},
   image: {type: String},
   videoDescription: {type: String},
+  score: {type: Number},
+  calories: {type: Number, default: 231},
   // ratings: [{type: Schema.Types.ObjectId, ref: 'Rating'}],
   author: {type: Schema.Types.ObjectId, ref: 'User'}
 }, {
